@@ -33,12 +33,12 @@ const Terms = () => {
           </h1>
           <ol className="list-disc text-white font-normal text-base md:text-lg lg:text-xl ml-5 md:ml-10 lg:ml-12 mt-5">
             <li>
-              Before allowing Nexmove to proceed with fulfilling the contract,
+              Before allowing us to proceed with fulfilling the contract,
               the client is solely responsible for ensuring proper backups of
               all content on their site.
             </li>
             <li>
-              Nexmove Solutions shall not be held responsible for any loss or
+              ArmourIQ shall not be held responsible for any loss or
               damage to existing data under any circumstances.
             </li>
           </ol>

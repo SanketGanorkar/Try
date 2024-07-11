@@ -22,7 +22,7 @@ const Navbar = () => {
             className="mr-6 mb-3 font-bold cursor-pointer"
             onClick={() => {
               navigate("/");
-              // scrollToSection("home");
+              
             }}
           >
             <a href="#home">HOME</a>

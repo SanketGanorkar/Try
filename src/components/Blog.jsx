@@ -50,7 +50,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-[#262626] flex flex-col items-center" id="blog">
+    <div className="bg-[#262626] flex flex-col items-center sm:pt-[70px]" id="blog">
       <h4 className="text-[#004bae] font-bold mt-[65px]">BLOG & NEWS</h4>
       <h2 className="text-white font-bold text-3xl">Latest News</h2>
       <p className="text-white mt-3 text-center">

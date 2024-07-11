@@ -15,7 +15,7 @@ import Service from "./components/Services/Service.jsx";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/Try">
+      <BrowserRouter basename="/ArmourIQ">
         <Scroll />
         <Navbar />
         <Routes>

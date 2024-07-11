@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+
 const Services = () => {
   const services = [
     {
@@ -113,7 +114,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-white font-bold text-3xl ml-10 mt-4">Enhancing Organisational Cybersecurity Through Comprehensive Services 
+      <h1 className="text-white font-bold text-3xl ml-10 mt-4">
+        Enhancing Organisational Cybersecurity Through Comprehensive Services
       </h1>
       <div className="text-white text-xl ml-10 mt-5">
         Our cybersecurity services provide comprehensive protection for your
@@ -123,27 +125,40 @@ const Services = () => {
         response for real-time protection, and robust data protection and
         encryption.
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10  lg:mt-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 lg:mt-2">
         {services.map((item) => (
-          <div
-            key={item.id}
-            className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px]  w-full h-full cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px]"
-          >
-            <div className="w-full h-full flex flex-col items-center justify-center">
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <ul className="list-disc text-left pl-5 mb-2">
-                {item.highlights.slice(0, 3).map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
-                ))}
-              </ul>
-              <Link to={item.path} className="text-white mt-2 hover:font-bold">
-                ...read more
-              </Link>
+          <div key={item.id} className="w-full h-full">
+            {/* For Desktop */}
+            <Link to={item.path} className="hidden lg:block w-full h-full">
+              <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px]">
+                <div className="w-full h-full flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <ul className="list-disc text-left pl-5 mb-2">
+                    {item.highlights.slice(0, 3).map((highlight, index) => (
+                      <li key={index}>{highlight}</li>
+                    ))}
+                  </ul>
+                  <span className="text-white mt-2 hover:font-bold">...read more</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* For Mobile */}
+            <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full lg:hidden">
+              <div className="w-full h-full flex flex-col items-center justify-center">
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <ul className="list-disc text-left pl-5 mb-2">
+                  {item.highlights.slice(0, 3).map((highlight, index) => (
+                    <li key={index}>{highlight}</li>
+                  ))}
+                </ul>
+                <Link to={item.path} className="text-white mt-2 hover:font-bold">...read more</Link>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

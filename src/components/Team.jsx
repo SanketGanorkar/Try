@@ -38,7 +38,6 @@ const Team = () => {
 
   return (
     <div className="bg-[#262626] flex flex-col items-center" id="team">
-      {/* <h2 className="text-[#004bae] font-bold mt-[70px]">OUR TEAM</h2> */}
       <h2 className="text-[#004bae] text-4xl font-semibold mt-12 text-center">
         Our Team
       </h2>
@@ -64,7 +63,7 @@ const Team = () => {
       </div> */}
       <div className="flex flex-col mt-5 w-full px-4 lg:px-0">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:space-x-8">
-          <img src={team2} className="h-[200px] lg:h-[345px] w-full lg:w-[445px] object-cover rounded-xl mb-4 lg:mb-0" />
+          <img src={team2} className="h-[200px] lg:h-[345px] w-full lg:w-[445px] object-cover rounded-xl mb-4 lg:mb-0 sm:ml-3" />
           <div className="flex flex-col lg:ml-5 text-center lg:text-left">
             <p className="text-white text-base lg:text-lg mr-2">
               At ArmourIQ, we are dedicated to democratizing cybersecurity, ensuring that businesses
