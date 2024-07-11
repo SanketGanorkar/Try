@@ -5,12 +5,6 @@ import logo from "/assets/Company.png";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  // const scrollToSection = (id) => {
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
   const [visibleMenu, setVisibleMenu] = useState(false);
 
   const navigate = useNavigate();
