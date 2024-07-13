@@ -33,10 +33,6 @@ const Testimonials = () => {
               TESTIMONIALS
             </h5>
             <h2 className="font-bold text-3xl mt-3">What Client Says About Us</h2>
-            {/* <p className="text-[15px] mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              doloremque perferendis quis!
-            </p> */}
           </div>
           <div>
             <button className="bg-[#004bae] w-[8rem] text-white p-2 font-semibold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">

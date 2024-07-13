@@ -19,7 +19,7 @@ const Trail = () => {
               Let us help you identify and mitigate risks with a
               personalized security assessment from our professionals.
             </div>
-            <button className="flex flex-row font-bold bg-[#004bae] text-white p-3 ml-[38px] mt-5">
+            <button className="flex flex-row font-bold bg-[] text-white p-3 ml-[38px] mt-5">
               <GrDocumentVerified className="mt-1 mr-2" /> BOOK A FREE CALL
             </button>
           </div>

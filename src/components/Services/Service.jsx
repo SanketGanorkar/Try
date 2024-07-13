@@ -1,7 +1,6 @@
 import React from 'react'
 import img from "/assets/ServiceBg.jpg";
 import {services} from "../../data/services.js"
-import ContactD from "./Contact/ContactD.jsx";
 import Footer from "./../Footer.jsx";
 import { useParams } from 'react-router-dom';
 
@@ -91,16 +90,16 @@ function Service(props) {
                             )) 
                         }
                     </div>
-                    <div className="contact-in-services flex flex-col">
+                    <div className="contact-in-services flex flex-col ">
                         <div className='lg:w-[60%]'>
-                            <button className="get-in-touch">
+                            {/* <button className="get-in-touch">
                                 Get in Touch
-                            </button>
+                            </button> */}
                             <p className="extra-con-para">
                                 {services[param].getInTouch}
                             </p>
                         </div>
-                        <ContactD />
+                        {/* <ContactD /> */}
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@ export const services = {
                 },
             ]
         },
-        benifits: {
+        benefits: {
             head: "Key Benefits",
             data: [
                 {
@@ -81,7 +81,7 @@ export const services = {
                 },
             ]
         },
-        benifits: {
+        benefits: {
             head: "Key Benefits",
             data: [
                 {
@@ -146,7 +146,7 @@ export const services = {
                 },
             ]
         },
-        benifits: {
+        benefits: {
             head: "What you get",
             data: [
                 {
@@ -301,10 +301,6 @@ export const services = {
                 {
                     approachHead: "Simulated Social Engineering Test",
                     content: "Test your resilience to social engineering with ArmourIQ's Simulated Social Engineering Test. We simulate realistic phishing and social engineering tactics to identify vulnerabilities and train your team."
-                },
-                {
-                    approachHead: "Vulnerability Assessment",
-                    content: "Strengthen your security posture with ArmourIQ's Vulnerability Assessment. We identify and assess potential vulnerabilities in your systems, providing actionable insights to mitigate risks effectively."
                 }
             ]
         },
@@ -356,10 +352,6 @@ export const services = {
                 {
                     approachHead: "Ongoing Evaluation and Adjustment",
                     content: "Adjusting strategies as necessary to adapt to emerging threats and evolving business needs."
-                },
-                {
-                    approachHead: "Collaborative Support and Training",
-                    content: "Providing expert guidance and training to empower your team in effectively managing and responding to threats."
                 }
             ]
         },
@@ -498,6 +490,10 @@ export const services = {
                 {
                     approachHead: "Continuous Improvement & Adaptation",
                     content: "Ensuring ongoing resilience through iterative updates & strategic adjustments. We prioritize proactive measures to maintain robust security protocols."
+                },
+                {
+                    approachHead: "Collaborative Support & Training",
+                    content: "Providing expert guidance and training to empower your team in effectively managing and responding to threats"
                 }
             ]
         },
@@ -563,6 +559,10 @@ export const services = {
                 {
                     approachHead: "Scalability",
                     content: "Scale your cybersecurity operations effectively by adjusting the level of augmentation as your business needs evolve."
+                },
+                {
+                    approachHead: "Cost Efficiency",
+                    content: "Optimize costs with flexible staffing solutions that eliminate the overhead associated with permanent hires while maintaining high-quality expertise."
                 }
             ]
         },
@@ -574,7 +574,7 @@ export const services = {
         image: "/Virtual.jpeg",
         heading1: "Solidify Your Cybersecurity Strategy with",
         heading2: "Our Virtual Chief Information Security Officer (vCISO) Services",
-        content1: "Our vCISO services provide strategic guidance, risk management, and compliance expertise tailored to your organization’s unique needs. Ensure a robust security posture with proactive insights and cost-effective solutions. Partner with us for virtual CISO consulting services that empower your business to navigate the ever-evolving cybersecurity landscape with confidence.",
+        content: "Our vCISO services provide strategic guidance, risk management, and compliance expertise tailored to your organization’s unique needs. Ensure a robust security posture with proactive insights and cost-effective solutions. Partner with us for virtual CISO consulting services that empower your business to navigate the ever-evolving cybersecurity landscape with confidence.",
         approaches: {
             head: "How ArmourIQ Can Help You",
             data: [
@@ -592,7 +592,7 @@ export const services = {
                 },
                 {
                     approachHead: "Planning and Budgeting",
-                    descontentcription: "Developing and implementing a comprehensive cybersecurity strategy, secure information security architecture, and budgets for cybersecurity initiatives and incident response plans that align with business goals."
+                    content: "Developing and implementing a comprehensive cybersecurity strategy, secure information security architecture, and budgets for cybersecurity initiatives and incident response plans that align with business goals."
                 },
                 {
                     approachHead: "Compliance",

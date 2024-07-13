@@ -76,7 +76,7 @@ const Policies = () => {
             <li>
               Reprinting ArmourIQ content on any medium without prior written
               permission is prohibited. The copyright for content provided by
-              Nexmove Solutions will remain our property.
+              ArmourIQ Solutions will remain our property.
             </li>
           </ol>
         </div>

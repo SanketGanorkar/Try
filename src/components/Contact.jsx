@@ -2,6 +2,9 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { useState } from "react";
+import img from "/assets/ServiceBg.jpg";
+import contact from "/assets/contact.png";
+import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -14,9 +17,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = 'service_wcm3o3j';
-    const templateID = 'template_93tgdo8';
-    const publicKey = 'DuSbBCyG3R1hNDXzG';
+    const serviceId = "service_wcm3o3j";
+    const templateID = "template_93tgdo8";
+    const publicKey = "DuSbBCyG3R1hNDXzG";
 
     const templateParams = {
       from_name: name,
@@ -24,30 +27,40 @@ const Contact = () => {
       from_message: message,
       from_subject: subject,
       from_number: number,
-      to_name: 'Sanket',
+      to_name: "Sanket",
       message: message,
     };
 
-    emailjs.send(serviceId, templateID, templateParams, publicKey)
+    emailjs
+      .send(serviceId, templateID, templateParams, publicKey)
       .then((response) => {
-        alert('Message sent successfully!');
-        console.log('Email sent successfully!', response);
-        setName('');
-        setEmail('');
-        setMessage('');
-        setSubject('');
-        setNumber('');
+        alert("Message sent successfully!");
+        console.log("Email sent successfully!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setNumber("");
       })
       .catch((err) => {
-        alert('Could not send the message!');
-        console.log('Error sending the mail!', err);
+        alert("Could not send the message!");
+        console.log("Error sending the mail!", err);
       });
   };
 
   return (
-    <div className="flex bg-[#000000] justify-center" id="contact">
-      <div className="flex flex-row py-6 max-lg:px-6 max-lg:gap-8 max-md:flex-col">
-        <div className="lg:ml-[50px]">
+    <div className="flex flex-col bg-[#262626] justify-center">
+      <div className="relative">
+        <img src={img} className="topic-bg" alt="Service Image" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white lg:text-[55px] font-bold mt-8 text-[25px] text-nowrap max-sm:mt-12">
+          Contact Us
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row py-6 lg:px-6 lg:gap-8 mt-[100px]">
+        <div className="flex flex-col lg:w-1/3 items-center">
+          <img src={contact} className="h-[70%]" />
+        </div>
+        <div className="lg:w-1/3 lg:ml-[3px]">
           <h3 className="ml-3 mb-1 text-[#004bae] font-bold">CONTACT US</h3>
           <h2 className="ml-3 mt-1 text-white text-3xl font-bold">
             Contact Information
@@ -73,11 +86,11 @@ const Contact = () => {
           <div className="flex flex-row">
             <MdOutlineEmail color="#004bae" className="ml-3 mt-4" size={40} />
             <div className="flex flex-col">
-              <h5 className="text-white ml-3 mt-5">hello@armour.com</h5>
+              <h5 className="text-white ml-3 mt-5">hello@armouriq.com</h5>
             </div>
           </div>
         </div>
-        <div className="flex flex-col text-white lg:ml-[130px]">
+        <div className="flex flex-col text-white lg:w-1/3 lg:ml-[130px]">
           <input
             type="text"
             placeholder="Your name"
@@ -89,14 +102,14 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Your Phone Number"
-              className="p-3 w-[80%] text-white border-[#004bae] border-[1px] bg-[#000000]"
+              className="p-3 w-[55%] text-white border-[#004bae] border-[1px] bg-[#000000]"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
             <input
               type="email"
               placeholder="Your Mail"
-              className="text-white w-[50%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
+              className="text-white w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -123,6 +136,18 @@ const Contact = () => {
           </button>
         </div>
       </div>
+      <div className="flex flex-col">
+        <div className="w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.408640590646!2d77.21774037408956!3d28.527434588848106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce18b0950c389%3A0xebbb242665d51b64!2sSalcon%20Rasvilas!5e0!3m2!1sen!2sin!4v1720811429653!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

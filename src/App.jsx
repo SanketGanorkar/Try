@@ -8,6 +8,7 @@ import Blog1 from "./components/Blog/Blog1.jsx";
 import Blog2 from "./components/Blog/Blog2.jsx";
 import Blog3 from "./components/Blog/Blog3.jsx";
 import Blog4 from "./components/Blog/Blog4.jsx";
+import Contact from "./components/Contact.jsx";
 import Scroll from "./components/Scroll.jsx";
 import Policy from "./components/Policy.jsx";
 import Terms from "./components/Terms.jsx";
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/services" element={<Services />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<AboutUs />} />
           <Route exact path="/services/:param" element={<Service />} />
           <Route exact path="/terms-and-conditions" element={<Terms />} />
@@ -30,7 +32,7 @@ function App() {
           <Route exact path="/blog3" element={<Blog3 />} />
           <Route exact path="/blog4" element={<Blog4 />} />
         </Routes>
-        {/* <Terms/> */}
+
       </BrowserRouter>
     </>
   );

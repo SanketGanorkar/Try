@@ -39,20 +39,10 @@ const Navbar = () => {
           >
             SERVICES
           </li>
-          {/* <li
-            className="relative group mr-6 mb-3 font-bold cursor-pointer"
-            onClick={() => {
-              navigate("/ArmorIQ");
-              scrollToSection("team");
-            }}
-          >
-            TEAM
-          </li> */}
           <li
             className="relative group mr-6 mb-3 font-bold cursor-pointer"
             onClick={() => {
               navigate("/");
-              // scrollToSection("blog");
             }}
           >
             <a href="#blog">BLOG</a>
@@ -60,11 +50,10 @@ const Navbar = () => {
           <li
             className="mr-6 mb-3 font-bold cursor-pointer"
             onClick={() => {
-              navigate("/");
-              // scrollToSection("contact");
+              navigate("/contact");
             }}
           >
-            <a href="#contact">CONTACT</a>
+            CONTACT
           </li>
         </ul>
         <IoMdMenu

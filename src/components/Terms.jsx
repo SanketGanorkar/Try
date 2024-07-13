@@ -19,7 +19,7 @@ const Terms = () => {
               for, and mutually agreed upon by both parties.
             </li>
             <li>
-              The client bears sole responsibility for supplying Nexmove
+              The client bears sole responsibility for supplying ArmourIQ
               Solutions with all site content, including text and multimedia.
             </li>
             <li>
@@ -55,7 +55,7 @@ const Terms = () => {
             During the design phase and upon completion of the website, ArmourIQ will provide the Client with an opportunity to review its appearance and content. If the client does not respond within seven days, the material will be deemed automatically accepted.
           </p>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] mt-[20px] text-white">
-            Upon installation/deployment, Nexmove is not liable for any alterations made to the Client's pages or website by the Client or a third party, including additions, modifications, or deletions.
+            Upon installation/deployment, ArmourIQ is not liable for any alterations made to the Client's pages or website by the Client or a third party, including additions, modifications, or deletions.
           </p>
         </div>
       </div>

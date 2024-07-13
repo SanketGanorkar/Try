@@ -18,19 +18,19 @@ const AboutUs = () => {
       id: 1,
       logo: <FaBullseye size={30} />, // Icon for Mission
       title: "Our Mission",
-      desc: "Our mission at Nexmove Solutions is to empower businesses to grow, become efficient, and become successful through innovative IT solutions. Technology services that enable our clients to thrive in the digital age are at the forefront of our commitment to delivering cutting-edge technology services.",
+      desc: "Our mission at ArmourIQ Solutions is to empower businesses to grow, become efficient, and become successful through innovative IT solutions. Technology services that enable our clients to thrive in the digital age are at the forefront of our commitment to delivering cutting-edge technology services.",
     },
     {
       id: 2,
       logo: <FaEye size={30} />, // Icon for Vision
       title: "Our Vision",
-      desc: "As a leading IT consulting firm in India, Nexmove Solutions aims to be known for our expertise, integrity, and client-centric approach. To become trusted partners in our clients' digital transformation journeys, we continuously innovate and adapt to emerging technologies.",
+      desc: "As a leading IT consulting firm in India, ArmourIQ Solutions aims to be known for our expertise, integrity, and client-centric approach. To become trusted partners in our clients' digital transformation journeys, we continuously innovate and adapt to emerging technologies.",
     },
     {
       id: 3,
       logo: <FaHandshake size={30} />, // Icon for Values
       title: "Our Values",
-      desc: "Nexmove Solutions, an IT consulting firm in India, is committed to excellence, innovation, integrity, client-centricity, collaboration, and continuous learning. Our goal is to fulfill clients' needs by delivering top-notch solutions. In the digital age, we empower businesses to prosper through our culture of teamwork and growth.",
+      desc: "ArmourIQ Solutions, an IT consulting firm in India, is committed to excellence, innovation, integrity, client-centricity, collaboration, and continuous learning. Our goal is to fulfill clients' needs by delivering top-notch solutions. In the digital age, we empower businesses to prosper through our culture of teamwork and growth.",
     },
   ];
 

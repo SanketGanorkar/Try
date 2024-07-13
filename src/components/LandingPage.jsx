@@ -1,7 +1,6 @@
 import Footer from "./Footer.jsx";
 import Trial from "./Trial.jsx";
 import Trusted from "./Trusted.jsx";
-import Contact from "./Contact.jsx";
 import Testimonials from "./Testimonials.jsx";
 import Team from "./Team.jsx";
 import Intro from "./Intro.jsx";
@@ -17,7 +16,6 @@ const LandingPage = () => {
         <Team />
         <Blog />
         <Testimonials />
-        <Contact />
         <Footer />
       </div>
     </>
