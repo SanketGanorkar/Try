@@ -113,8 +113,7 @@ const Navbar = () => {
             </li>
             <li
               onClick={() => {
-                navigate("/");
-                // scrollToSection("contact");
+                navigate("/contact");
                 setVisibleMenu(false);
               }}
             >

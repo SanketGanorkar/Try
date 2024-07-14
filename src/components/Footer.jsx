@@ -381,7 +381,9 @@ const Footer = () => {
               >
                 Blog
               </a>
-              <h4 className="text-white text-[15px] mb-4 cursor-pointer">
+              <h4 className="text-white text-[15px] mb-4 cursor-pointer" onClick={() => {
+                navigate("/contact");
+              }}>
                 Contact
               </h4>
             </div>
@@ -471,7 +473,9 @@ const Footer = () => {
                 >
                   Blog
                 </a>
-                <h4 className="text-white text-[15px] mb-4 cursor-pointer">
+                <h4 className="text-white text-[15px] mb-4 cursor-pointer" onClick={() => {
+                navigate("/contact");
+              }}>
                   Contact
                 </h4>
               </div>
@@ -530,7 +534,6 @@ const Footer = () => {
             </div>
           </div>
           {/* Mobile view ends for this one*/}
-          {/* <hr className="border-t border-gray-0" /> */}
         </>
       }
 

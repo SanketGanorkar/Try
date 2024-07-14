@@ -52,7 +52,7 @@ const Blog = () => {
   return (
     // text-[#15e9f0]
     <div className="bg-[#262626] flex flex-col items-center sm:pt-[70px]" id="blog">
-      <h4 className="text-[#15e9f0] font-bold mt-[65px]">BLOG & NEWS</h4>
+      <h4 className="text-[#15e9f0] font-bold mt-[65px] text-nowrap">BLOG & NEWS</h4>
       <h2 className="text-white font-bold text-3xl">Latest News</h2>
       <p className="text-white mt-3 text-center">
         Stay updated with the latest cybersecurity trends, news, and expert

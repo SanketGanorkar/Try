@@ -144,7 +144,7 @@ const Services = () => {
             </Link>
 
             {/* For Mobile */}
-            <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full lg:hidden">
+            <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px]">
               <div className="w-full h-full flex flex-col items-center justify-center">
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                 <ul className="list-disc text-left pl-5 mb-2">
