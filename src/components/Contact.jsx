@@ -47,7 +47,6 @@ const Contact = () => {
         console.log("Error sending the mail!", err);
       });
   };
-
   return (
     <div className="flex flex-col bg-[#262626] justify-center">
       <div className="relative">
@@ -56,11 +55,11 @@ const Contact = () => {
           Contact Us
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row py-6 lg:px-6 lg:gap-8 mt-[100px]">
-        <div className="flex flex-col lg:w-1/3 items-center">
-          <img src={contact} className="h-[70%]" />
+      <div className="flex flex-col lg:flex-row py-6 lg:px-6 lg:gap-8 mt-[100px] h-fit max-lg:items-center lg:justify-center">
+        <div className="flex flex-col  lg:w-[28rem] items-center h-fit">
+          <img src={contact} className="max-xl:h-[70%] pl-8" />
         </div>
-        <div className="lg:w-1/3 lg:ml-[3px]">
+        <div className="lg:max-xl:w-1/3  lg:ml-[3px] sm:max-lg:w-[40rem] xl:w-fit max-sm:w-screen max-sm:pl-4 ">
           <h3 className="ml-3 mb-1 text-[#004bae] font-bold">CONTACT US</h3>
           <h2 className="ml-3 mt-1 text-white text-3xl font-bold">
             Contact Information
@@ -78,19 +77,19 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex flex-row">
-            <FaPhoneVolume color="#004bae" className="ml-4 mt-5" size={28} />
+            <FaPhoneVolume color="#004bae" className="ml-4 mt-5" size={22} />
             <div className="flex flex-col">
               <h5 className="text-white ml-5 mt-5">+1 469 296 9672</h5>
             </div>
           </div>
           <div className="flex flex-row">
-            <MdOutlineEmail color="#004bae" className="ml-3 mt-4" size={40} />
+            <MdOutlineEmail color="#004bae" className="ml-3 mt-5" size={28} />
             <div className="flex flex-col">
               <h5 className="text-white ml-3 mt-5">hello@armouriq.com</h5>
             </div>
           </div>
         </div>
-        <div className="flex flex-col text-white lg:w-1/3 lg:ml-[130px]">
+        <div className="flex flex-col text-white lg:max-xl:w-1/3 xl:ml-[5rem] max-md:px-4 sm:max-lg:w-[40rem] h-fit lg:w-[35rem]">
           <input
             type="text"
             placeholder="Your name"
@@ -102,14 +101,14 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Your Phone Number"
-              className="p-3 w-[55%] text-white border-[#004bae] border-[1px] bg-[#000000]"
+              className="p-3 w-[60%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
             <input
               type="email"
               placeholder="Your Mail"
-              className="text-white w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
+              className="text-white h-[40px] w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
