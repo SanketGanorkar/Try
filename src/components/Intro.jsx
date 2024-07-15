@@ -37,13 +37,13 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%] max-sm:flex-col">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-[#004bae] font-bold text-nowrap">
+          <h2 className="text-[#004AAD] font-bold text-nowrap">
             DEMOCRATIZING CYBERSECURITY
           </h2>
-          <h2 className="text-white font-bold text-3xl max-sm:text-[11px]">
+          <h2 className="text-black font-bold text-3xl max-sm:text-[11px]">
             ASSESS → DEFEND → SECURE
           </h2>
-          <p className="text-white mt-8">
+          <p className="text-black mt-8">
             Tailored services are designed to meet the specific
             <span className="hidden sm:inline"></span>
             needs of diverse clients, from small startups to large
@@ -58,7 +58,7 @@ const Intro = () => {
           </p>
 
           <div className="flex flex-col mt-9 sm:flex-row sm:mt-16">
-            <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer w-2/5">
+            <button className="bg-[#004bae] text-black font-bold p-3 text-[15px] cursor-pointer w-2/5">
               LEARN MORE
             </button>
             <div className="flex flex-col mt-4 sm:flex-row sm:ml-8 sm:mt-0 sm:gap-4">
@@ -66,10 +66,10 @@ const Intro = () => {
                 Call us
               </h2>
               <div className="flex flex-col">
-                <h2 className="text-white text-[15px] mt-1 sm:mt-0">
+                <h2 className="text-black text-[15px] mt-1 sm:mt-0">
                 +1 469 296 9672
                 </h2>
-                <h2 className="text-white text-[15px]">+91 9302864102</h2>
+                <h2 className="text-black text-[15px]">+91 9302864102</h2>
               </div>
             </div>
           </div>
@@ -78,13 +78,13 @@ const Intro = () => {
         <div className="flex flex-wrap sm:flex-col sm:items-center">
           <div className="flex flex-col text-right max-sm:text-left">
             <div className="flex flex-col sm:pl-[50px] mt-[30px] sm:mt-[120px]">
-              <h2 className="text-white font-bold text-5xl max-sm:text-3xl">
+              <h2 className="text-black font-bold text-5xl max-sm:text-3xl">
                 50 +
               </h2>
-              <h2 className="text-white font-bold pt-1">
+              <h2 className="text-black font-bold pt-1">
                 Cyber Security Project
               </h2>
-              <p className="text-white">
+              <p className="text-black">
                 Our track record reflects our commitment to delivering
                 <span className="hidden sm:inline"></span>
                 effective cybersecurity solutions tailored to the unique
@@ -95,13 +95,13 @@ const Intro = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <h2 className="text-white font-bold text-3xl pt-5 sm:pl-[75px]">
+              <h2 className="text-black font-bold text-3xl pt-5 sm:pl-[75px]">
                 100 %
               </h2>
-              <h2 className="text-white font-bold sm:pl-[50px]">
+              <h2 className="text-black font-bold sm:pl-[50px]">
                 Customer Satisfaction
               </h2>
-              <p className="text-white sm:leading-relaxed sm:pl-3">
+              <p className="text-black sm:leading-relaxed sm:pl-3">
                 Our unwavering focus on quality, reliability, and proactive
                 support enables us to maintain an exceptional level of
                 satisfaction and fostering long-lasting partnerships built on
@@ -118,7 +118,7 @@ const Intro = () => {
           {arr.map((item) => (
             <div
               key={item.id}
-              className="bg-[#262626] text-white p-6 rounded-lg flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#004bae] hover:border-white hover:border-[1px]"
+              className="bg-[#FFF7D9] text-black p-6 rounded-lg flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#000181] hover:border-white hover:border-[1px]"
             >
               <div className="text-4xl mb-4">{item.logo}</div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -127,49 +127,49 @@ const Intro = () => {
           ))}
         </div>
       </div>
-      <div className="bg-[#004bae] min-h-[100px] lg:h-[150px] flex items-center justify-center md:flex md:flex-col md:items-center md:gap-y-4">
+      <div className="bg-[#FFF7D9] min-h-[100px] lg:h-[150px] flex items-center justify-center md:flex md:flex-col md:items-center md:gap-y-4">
         <div className="flex flex-row items-center justify-center py-4 gap-x-14 gap-y-4 lg:gap-24 flex-wrap max-md:grid max-md:grid-rows-2">
           <div className="flex flex-col items-center">
             <div className="flex flex-row">
               <CountUp
                 delay={2}
                 end={10}
-                className="text-white text-3xl font-semibold"
+                className="text-black text-3xl font-semibold"
                 duration={2}
                 enableScrollSpy={true}
                 isScrollingDown={true}
               />
-              <h4 className="text-3xl text-white font-semibold">+</h4>
+              <h4 className="text-3xl text-black font-semibold">+</h4>
             </div>
 
-            <h4 className="font-semibold text-[30px] ">Clients</h4>
+            <h4 className="font-semibold text-[30px] text-black ">Clients</h4>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex flex-row">
               <CountUp
                 delay={2}
                 end={25}
-                className="text-white text-3xl font-semibold"
+                className="text-black text-3xl font-semibold"
                 duration={2}
                 enableScrollSpy={true}
                 isScrollingDown={true}
               />
-              <h4 className="text-3xl text-white font-semibold">+</h4>
+              <h4 className="text-3xl text-black font-semibold">+</h4>
             </div>
 
-            <h4 className="font-semibold text-[30px] ml-3">Engagements</h4>
+            <h4 className="font-semibold text-[30px] ml-3 text-black">Engagements</h4>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex flex-row">
               <CountUp
                 delay={2}
                 end={5}
-                className="text-white text-3xl font-semibold ml-4"
+                className="text-black text-3xl font-semibold ml-4"
                 duration={2}
                 enableScrollSpy={true}
                 isScrollingDown={true}
               />
-              <h4 className="text-3xl text-white font-semibold">+</h4>
+              <h4 className="text-3xl text-black font-semibold">+</h4>
             </div>
 
             <h4 className="font-semibold text-[30px] ml-3">Team</h4>
@@ -179,15 +179,15 @@ const Intro = () => {
               <CountUp
                 delay={2}
                 end={50}
-                className="text-white text-3xl font-semibold"
+                className="text-black text-3xl font-semibold"
                 duration={2}
                 enableScrollSpy={true}
                 isScrollingDown={true}
               />
-              <h4 className="text-3xl text-white font-semibold">+</h4>
+              <h4 className="text-3xl text-black font-semibold">+</h4>
             </div>
 
-            <h4 className="font-semibold text-[30px] ml-3">Assessmentt</h4>
+            <h4 className="font-semibold text-[30px] ml-3">Assessment</h4>
           </div>
         </div>
       </div>

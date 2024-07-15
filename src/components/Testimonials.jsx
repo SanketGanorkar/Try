@@ -25,9 +25,9 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="flex bg-[#000000] lg:justify-center">
+    <div className="flex bg-[#FFF7D9] lg:justify-center">
       <div className="flex flex-col px-4 max-lg:w-screen">
-        <div className="flex flex-row text-white max-sm:flex-col">
+        <div className="flex flex-row text-black max-sm:flex-col">
           <div>
             <h5 className="font-bold text-[13px] text-[#004bae] mt-12">
               TESTIMONIALS
@@ -35,7 +35,7 @@ const Testimonials = () => {
             <h2 className="font-bold text-3xl mt-3">What Client Says About Us</h2>
           </div>
           <div>
-            <button className="bg-[#004bae] w-[8rem] text-white p-2 font-semibold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">
+            <button className="bg-[#15e9f0] w-[8rem] text-black p-2 font-bold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">
               SEE MORE
             </button>
           </div>
@@ -52,14 +52,14 @@ const Testimonials = () => {
                   <FaStar color="yellow" className="ml-2 mt-8" />
                   <FaStar color="yellow" className="ml-2 mt-8" />
                 </div>
-                <p className="text-white mt-3">
+                <p className="text-black mt-3">
                   {item.desc}
                 </p>
                 <div className="flex flex-row">
                   <img src={item.img} className="h-[70px] mt-3 mb-3" />
                   <div className="flex flex-col mt-5 ml-5">
-                    <h2 className="text-white font-semibold">{item.name}</h2>
-                    <h6 className="text-white text-[14px]">{item.desig}</h6>
+                    <h2 className="text-black font-semibold">{item.name}</h2>
+                    <h6 className="text-black text-[14px]">{item.desig}</h6>
                   </div>
                 </div>
               </div>

@@ -109,15 +109,15 @@ const Services = () => {
       <div className="relative">
         <div className="bg-abbg bg-cover bg-center h-[240px] opacity-40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-4xl text-white mt-12 mb-9">
+          <div className="text-4xl text-black mt-12 mb-9">
             <span className="ml-[15px] text-6xl">Our Services</span>
           </div>
         </div>
       </div>
-      <h1 className="text-white font-bold text-3xl ml-10 mt-4">
+      <h1 className="text-black font-bold text-3xl ml-10 mt-4">
         Enhancing Organisational Cybersecurity Through Comprehensive Services
       </h1>
-      <div className="text-white text-xl ml-10 mt-5">
+      <div className="text-black text-xl ml-10 mt-5">
         Our cybersecurity services provide comprehensive protection for your
         business against cyber threats, ensuring data security, <br />regulatory
         compliance, and business continuity. We offer risk assessment and
@@ -130,7 +130,7 @@ const Services = () => {
           <div key={item.id} className="w-full h-full">
             {/* For Desktop */}
             <Link to={item.path} className="hidden lg:block w-full h-full">
-              <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px]">
+              <div className="bg-[#000181]] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px]">
                 <div className="w-full h-full flex flex-col items-center justify-center">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="list-disc text-left pl-5 mb-2">
@@ -138,13 +138,13 @@ const Services = () => {
                       <li key={index}>{highlight}</li>
                     ))}
                   </ul>
-                  <span className="text-white mt-2 hover:font-bold">...read more</span>
+                  <span className="text-black mt-2 hover:font-bold">...read more</span>
                 </div>
               </div>
             </Link>
 
             {/* For Mobile */}
-            <div className="bg-[#262626] text-white p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px]">
+            <div className="bg-[#000181] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-full h-full lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px]">
               <div className="w-full h-full flex flex-col items-center justify-center">
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                 <ul className="list-disc text-left pl-5 mb-2">
@@ -152,7 +152,7 @@ const Services = () => {
                     <li key={index}>{highlight}</li>
                   ))}
                 </ul>
-                <Link to={item.path} className="text-white mt-2 hover:font-bold">...read more</Link>
+                <Link to={item.path} className="text-black mt-2 hover:font-bold">...read more</Link>
               </div>
             </div>
           </div>

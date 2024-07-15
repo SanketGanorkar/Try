@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import logo from "/assets/Company.png";
+import logo2 from "/assets/logo2.png"
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,14 +11,14 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[98px] items-center px-4">
+      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#FFF7D9] h-[98px] items-center px-4">
         <img
-          src={logo}
+          src={logo2}
           alt="Company Logo"
           className="h-[130px] ml-0 mr-auto sm:ml-0 cursor-pointer"
           onClick={() => navigate("/")}
         />
-        <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
+        <ul className="flex flex-row max-sm:hidden items-center text-black list-none ml-auto">
           <li
             className="mr-6 mb-3 font-bold cursor-pointer"
             onClick={() => {

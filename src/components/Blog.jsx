@@ -51,10 +51,10 @@ const Blog = () => {
 
   return (
     // text-[#15e9f0]
-    <div className="bg-[#262626] flex flex-col items-center sm:pt-[70px]" id="blog">
-      <h4 className="text-[#15e9f0] font-bold mt-[65px] text-nowrap">BLOG & NEWS</h4>
-      <h2 className="text-white font-bold text-3xl">Latest News</h2>
-      <p className="text-white mt-3 text-center">
+    <div className="bg-[#FFF7D9] flex flex-col items-center sm:pt-[70px]" id="blog">
+      <h4 className="text-[#84A7BA] font-bold mt-[65px] text-nowrap">BLOG & NEWS</h4>
+      <h2 className="text-black font-bold text-3xl">Latest News</h2>
+      <p className="text-black mt-3 text-center">
         Stay updated with the latest cybersecurity trends, news, and expert
         insights to keep your business secure.
       </p>
@@ -72,21 +72,21 @@ const Blog = () => {
               />
             </Link>
             <Link to={item.path}>
-              <h2 className="ml-2 mt-2 text-[#004bae] text-xl font-bold">
+              <h2 className="ml-2 mt-2 text-[#FFF7D9] text-xl font-bold">
                 {item.title}
               </h2>
             </Link>
 
-            <div className="flex flex-row items-center ml-2 mt-2 text-white">
+            <div className="flex flex-row items-center ml-2 mt-2 text-black">
               <div>{item.date}</div>
               <div className="flex flex-row items-center ml-auto">
                 <FaRegCommentAlt className="mr-2 mt-1" />
                 <div className="mr-4 ">{item.comments}</div>
               </div>
             </div>
-            <p className="ml-2 text-white mt-2">{item.desc}</p>
+            <p className="ml-2 text-black mt-2">{item.desc}</p>
             <Link to={item.path}>
-              <h2 className="ml-2 mt-3 mb-2 text-white font-bold cursor-pointer">
+              <h2 className="ml-2 mt-3 mb-2 text-black font-bold cursor-pointer">
                 READ MORE
               </h2>
             </Link>
