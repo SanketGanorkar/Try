@@ -4,7 +4,7 @@ const Trail = () => {
   return (
     <div className="bg-trial bg-cover bg-center h-[350px]">
       <div className="lg:pl-[110px]">
-        <div className="bg-[#FFF7D9] text-black h-[390px] w-[350px] ml-[35px]">
+        <div className="bg-[#F6F5F5] text-black h-[390px] w-[350px] ml-[35px] border-[2px]">
           <div className="font-bold text-2xl pl-[38px] pt-[40px]">
             Strengthen Your
             <br />
@@ -19,7 +19,7 @@ const Trail = () => {
               Let us help you identify and mitigate risks with a
               personalized security assessment from our professionals.
             </div>
-            <button className="flex flex-row font-bold bg-[] text-black p-3 ml-[38px] mt-5 bg-[#004bae]">
+            <button className="flex flex-row font-bold  text-white p-3 ml-[38px] mt-5 bg-[#004AAD]">
               <GrDocumentVerified className="mt-1 mr-2" /> BOOK A FREE CALL
             </button>
           </div>

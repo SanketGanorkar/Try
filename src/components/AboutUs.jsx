@@ -1,4 +1,4 @@
-import { FaPhoneVolume } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaBullseye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -10,25 +10,65 @@ import { GrIntegration } from "react-icons/gr";
 import { GrShieldSecurity } from "react-icons/gr";
 import TeamAbout from "/assets/TeamAbout.jpg";
 import { BsBullseye } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
-
+import { useState } from "react";
 const AboutUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+  const [number, setNumber] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_wcm3o3j";
+    const templateID = "template_93tgdo8";
+    const publicKey = "DuSbBCyG3R1hNDXzG";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_message: message,
+      from_subject: subject,
+      from_number: number,
+      to_name: "Sanket",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateID, templateParams, publicKey)
+      .then((response) => {
+        alert("Message sent successfully!");
+        console.log("Email sent successfully!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setNumber("");
+      })
+      .catch((err) => {
+        alert("Could not send the message!");
+        console.log("Error sending the mail!", err);
+      });
+  };
   const visionMissionValues = [
     {
       id: 1,
-      logo: <FaBullseye size={30} />, // Icon for Mission
+      logo: <FaBullseye size={30} />,
       title: "Our Mission",
       desc: "Our mission at ArmourIQ Solutions is to empower businesses to grow, become efficient, and become successful through innovative IT solutions. Technology services that enable our clients to thrive in the digital age are at the forefront of our commitment to delivering cutting-edge technology services.",
     },
     {
       id: 2,
-      logo: <FaEye size={30} />, // Icon for Vision
+      logo: <FaEye size={30} />,
       title: "Our Vision",
       desc: "As a leading IT consulting firm in India, ArmourIQ Solutions aims to be known for our expertise, integrity, and client-centric approach. To become trusted partners in our clients' digital transformation journeys, we continuously innovate and adapt to emerging technologies.",
     },
     {
       id: 3,
-      logo: <FaHandshake size={30} />, // Icon for Values
+      logo: <FaHandshake size={30} />,
       title: "Our Values",
       desc: "ArmourIQ Solutions, an IT consulting firm in India, is committed to excellence, innovation, integrity, client-centricity, collaboration, and continuous learning. Our goal is to fulfill clients' needs by delivering top-notch solutions. In the digital age, we empower businesses to prosper through our culture of teamwork and growth.",
     },
@@ -75,18 +115,18 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="flex flex-col bg-[#262626] mt-3">
+      <div className="flex flex-col bg-white mt-3">
         <div>
           <div className="relative">
-            <div className="bg-abbg bg-cover bg-center max-sm:h-[200px] h-[240px] opacity-40"></div>
+            <div className="bg-abbg bg-cover bg-center max-sm:h-[200px] h-[300px] opacity-50"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-4xl md:text-7xl text-white mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+              <div className="text-4xl md:text-7xl text-black mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
                 About Us
               </div>
             </div>
           </div>
           <div>
-            <p className="mx-4 md:ml-11 text-white font-normal text-sm md:text-xl mt-3 ">
+            <p className="mx-4 md:ml-11 text-black font-normal text-sm md:text-xl mt-3 ">
               At the heart of innovation, where technology meets craftsmanship,
               our company stands as a beacon of transformation and excellence.
               We are not merely cybersecurity experts we are pioneers committed
@@ -96,7 +136,7 @@ const AboutUs = () => {
               them towards their zenith.
             </p>
           </div>
-          <h1 className="text-white font-semibold text-2xl md:text-4xl ml-4 md:ml-12 mt-5 mb-3">
+          <h1 className="text-black font-semibold text-2xl md:text-4xl ml-4 md:ml-12 mt-5 mb-3">
             Why Choose Us{" "}
           </h1>
           <div className="flex flex-col lg:flex-row items-center justify-center mt-10 lg:mt-0">
@@ -112,7 +152,7 @@ const AboutUs = () => {
                 {visionMissionValues.map((item) => (
                   <div
                     key={item.id}
-                    className="bg-[#262626] text-white p-6 rounded-lg flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#004bae] hover:border-white hover:border-[1px] w-full"
+                    className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[310px] h-[310px]"
                   >
                     <div className="flex items-center mb-2">
                       <div className="mr-2">{item.logo}</div>
@@ -128,17 +168,17 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="text-white mx-4 md:ml-10 text-2xl md:text-3xl font-semibold mt-5">
+          <div className="text-black mx-4 md:ml-10 text-2xl md:text-3xl font-semibold mt-5">
             Discover exceptional experiences through testimonials from our
             satisfied customers
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 md:p-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 p-4 md:p-10">
             {sections.map((section) => (
               <div
                 key={section.id}
-                className="bg-[#262626] text-white p-6 rounded-lg flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#004bae] hover:border-white hover:border-[1px] w-full "
+                className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[380px] h-[380px] "
               >
                 <div className="flex flex-row">
                   <div className="mr-2">{section.logo}</div>
@@ -158,17 +198,15 @@ const AboutUs = () => {
         <div className="flex flex-col md:flex-row">
           <div className="mt-10 md:mt-[100px] mx-4 md:ml-[140px]">
             <div className="flex flex-row items-center mb-4">
-              <FaPhoneVolume color="#004bae" className="mr-2" size={29} />
+              <FaPhoneAlt color="#004AAD" className="mr-2" size={29} />
               <div className="flex flex-col">
-                <h3 className="font-bold text-white">Our Number</h3>
-                <h5 className="text-white">+91 6306867803</h5>
+                <h5 className="text-black">+91 6306867803</h5>
               </div>
             </div>
             <div className="flex flex-row items-center mb-4">
-              <MdOutlineEmail color="#004bae" className="mr-2" size={40} />
+              <MdOutlineEmail color="#004AAD" className="mr-2" size={40} />
               <div className="flex flex-col">
-                <h3 className="font-bold text-white">Our Mail</h3>
-                <h5 className="text-white">hello@armourIQ.com</h5>
+                <h5 className="text-black">hello@armourIQ.com</h5>
               </div>
             </div>
           </div>
@@ -178,30 +216,43 @@ const AboutUs = () => {
                 type="text"
                 placeholder="Your name"
                 className="w-full p-3 h-[40px] border-[#004bae] border-[1px] bg-[#000000] my-3"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
-              <div className="flex flex-col md:flex-row w-full gap-2">
+              <div className="flex flex-row w-full gap-2">
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Your Phone Number"
-                  className="p-3 w-full md:w-[80%] text-white border-[#004bae] border-[1px] bg-[#000000]"
+                  className="p-3 w-[60%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
                 />
                 <input
                   type="email"
                   placeholder="Your Mail"
-                  className="text-white w-full md:w-[50%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
+                  className="text-white h-[40px] w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <input
                 type="text"
                 placeholder="Subject"
-                className=" w-full pl-3 h-[40px] border-[#004bae] border-[1px] bg-[#000000] my-3"
+                className="w-full pl-3 h-[40px] border-[#004bae] border-[1px] bg-[#000000] my-3"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               />
               <textarea
                 type="text"
                 placeholder="Your Message"
-                className=" w-full pl-2 pt-2 h-[100px] border-[#004bae] border-[1px] bg-[#000000] my-3"
+                className="w-full pl-2 pt-2 h-[100px] border-[#004bae] border-[1px] bg-[#000000] my-3"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
-              <button className="bg-[#004bae] p-3 font-bold w-full">
+              <button
+                className="bg-[#004bae] p-3 font-bold w-full"
+                onClick={handleSubmit}
+              >
                 SEND MAIL
               </button>
             </div>

@@ -9,6 +9,8 @@ import Blog2 from "./components/Blog/Blog2.jsx";
 import Blog3 from "./components/Blog/Blog3.jsx";
 import Blog4 from "./components/Blog/Blog4.jsx";
 import Contact from "./components/Contact.jsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Scroll from "./components/Scroll.jsx";
 import Policy from "./components/Policy.jsx";
 import Terms from "./components/Terms.jsx";

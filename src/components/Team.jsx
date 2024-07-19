@@ -37,7 +37,7 @@ const Team = () => {
   // ];
 
   return (
-    <div className="bg-[#FFF7D9] flex flex-col items-center" id="team">
+    <div className="bg-white flex flex-col items-center" id="team">
       <h2 className="text-black text-4xl font-semibold mt-12 text-center">
         Our Team
       </h2>

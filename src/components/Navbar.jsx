@@ -11,54 +11,54 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#FFF7D9] h-[98px] items-center px-4">
+      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-white h-[98px] items-center px-4">
         <img
           src={logo2}
           alt="Company Logo"
           className="h-[130px] ml-0 mr-auto sm:ml-0 cursor-pointer"
           onClick={() => navigate("/")}
         />
-        <ul className="flex flex-row max-sm:hidden items-center text-black list-none ml-auto">
+        <ul className="flex flex-row max-sm:hidden items-center text-black list-none ml-auto font-[Roboto]">
           <li
-            className="mr-6 mb-3 font-bold cursor-pointer"
+            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/");
               
             }}
           >
-            <a href="#home">HOME</a>
+            <a href="#home">Home</a>
           </li>
           <li
-            className="mr-6 mb-3 font-bold cursor-pointer"
+            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
             onClick={() => navigate("/about")}
           >
-            ABOUT US
+            About Us
           </li>
           <li
-            className="relative group mr-4 mb-3 font-bold cursor-pointer"
+            className="relative group mr-4 mb-3 text-2xl font-medium cursor-pointer"
             onClick={() => navigate("/services")}
           >
-            SERVICES
+            Services
           </li>
           <li
-            className="relative group mr-6 mb-3 font-bold cursor-pointer"
+            className="relative group mr-6 mb-3 text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
           >
-            <a href="#blog">BLOG</a>
+            <a href="#blog">Blog</a>
           </li>
           <li
-            className="mr-6 mb-3 font-bold cursor-pointer"
+            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/contact");
             }}
           >
-            CONTACT
+            Contact
           </li>
         </ul>
         <IoMdMenu
-          color="white"
+          color="black"
           size={25}
           className="mr-3 mb-2 block sm:hidden max-sm:h-8 max-sm:w-8 cursor-pointer"
           onClick={() => setVisibleMenu(true)}
@@ -72,7 +72,7 @@ const Navbar = () => {
             className="absolute top-4 right-4 max-sm:h-8 max-sm:w-8 cursor-pointer"
             onClick={() => setVisibleMenu(false)}
           />
-          <ul className="text-white absolute top-14 right-4 text-right text-2xl flex flex-col gap-4">
+          <ul className="text-white absolute top-14 right-10 text-right text-2xl flex flex-col gap-4">
             <li onClick={() => {
                 navigate("/");
                 // scrollToSection("home");
@@ -97,7 +97,6 @@ const Navbar = () => {
             <li
               onClick={() => {
                 navigate("/");
-                // scrollToSection("team");
                 setVisibleMenu(false);
               }}
             >
@@ -106,7 +105,6 @@ const Navbar = () => {
             <li
               onClick={() => {
                 navigate("/");
-                // scrollToSection("blog");
                 setVisibleMenu(false);
               }}
             >

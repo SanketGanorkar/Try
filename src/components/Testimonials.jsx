@@ -25,17 +25,17 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="flex bg-[#FFF7D9] lg:justify-center">
+    <div className="flex bg-white lg:justify-center">
       <div className="flex flex-col px-4 max-lg:w-screen">
         <div className="flex flex-row text-black max-sm:flex-col">
           <div>
-            <h5 className="font-bold text-[13px] text-[#004bae] mt-12">
+            <h5 className="font-bold  text-[#004bae] mt-12">
               TESTIMONIALS
             </h5>
             <h2 className="font-bold text-3xl mt-3">What Client Says About Us</h2>
           </div>
           <div>
-            <button className="bg-[#15e9f0] w-[8rem] text-black p-2 font-bold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">
+            <button className="bg-[#004AAD] w-[8rem] text-white p-2 font-bold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">
               SEE MORE
             </button>
           </div>
@@ -44,13 +44,13 @@ const Testimonials = () => {
         <div className="max-lg:overflow-x-scroll">
           <div className="flex flex-row gap-2 md:gap-4 xl:gap-12 max-lg:w-[65rem] max-md:overflow-x-scroll">
             {arr.map((item) => (
-              <div key={item.id} className="bg-[#262626] mb-9 border-[#004bae] border-[2px] w-[342px] h-[250px] mt-6 md:mt-12 pl-6 pr-3">
+              <div key={item.id} className="bg-[#F6F5F5] mb-9 border-[2px] w-[342px] h-[250px] mt-6 md:mt-12 pl-6 pr-3">
                 <div className="flex flex-row mt-3">
-                  <FaStar color="yellow" className="mt-8" />
-                  <FaStar color="yellow" className="ml-2 mt-8" />
-                  <FaStar color="yellow" className="ml-2 mt-8" />
-                  <FaStar color="yellow" className="ml-2 mt-8" />
-                  <FaStar color="yellow" className="ml-2 mt-8" />
+                  <FaStar color="black" className="mt-8" />
+                  <FaStar color="black" className="ml-2 mt-8" />
+                  <FaStar color="black" className="ml-2 mt-8" />
+                  <FaStar color="black" className="ml-2 mt-8" />
+                  <FaStar color="black" className="ml-2 mt-8" />
                 </div>
                 <p className="text-black mt-3">
                   {item.desc}
