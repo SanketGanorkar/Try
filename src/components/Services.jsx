@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import './Services.css'
+
 
 const Services = () => {
   const services = [
@@ -140,7 +142,7 @@ const Services = () => {
           <div key={item.id} className="w-full h-full">
             {/* For Desktop */}
             <Link to={item.path} className="hidden lg:block w-full h-full">
-              <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[280px] h-[280px] cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white">
+              <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[280px] h-[280px] cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
                 <div className="w-full h-full flex flex-col items-center justify-center">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="list-disc text-left pl-5 mb-2">
@@ -156,7 +158,7 @@ const Services = () => {
             </Link>
 
             {/* For Mobile */}
-            <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[250px] h-[250px] lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white">
+            <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[250px] h-[250px] lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
               <div className="w-full h-full flex flex-col items-center justify-center">
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                 <ul className="list-disc text-left pl-5 mb-2">
@@ -175,7 +177,36 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className="p-10 lg:mt-2"></div>
+      <div className="p-10 pt-0 lg:mt-2 flex flex-col justify-center items-center">
+        <h1 className="font-bold text-4xl max-sm:text-2xl">Frequently Asked Questions</h1>
+        <h3 className="font-normal text-xl text-gray-500 mt-2">Your Queries, Our Answers</h3>
+        <div className="flex flex-col gap-y-5">
+            <details className="group">
+              <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
+              <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
+            </details>
+            <hr className="border-t-2 border-gray-300"/>
+            <details className="group">
+              <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
+              <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
+            </details>
+            <hr className="border-t-2 border-gray-300"/>
+            <details className="group">
+              <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
+              <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
+            </details>
+            <hr className="border-t-2 border-gray-300"/>
+            <details className="group">
+              <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
+              <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
+            </details>
+            <hr className="border-t-2 border-gray-300"/>
+            <details className="group">
+              <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
+              <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
+            </details>
+        </div>
+      </div>
       <Footer />
     </div>
   );

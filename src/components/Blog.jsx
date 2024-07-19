@@ -6,7 +6,6 @@ import { FaRegCommentAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
-
 const Blog = () => {
   const settings = {
     dots: true,
@@ -92,7 +91,7 @@ const Blog = () => {
         insights to keep your business secure.
       </p>
       <div className="flex flex-wrap justify-center">
-        {/* <Slider {...settings}> */}
+        <Slider {...settings}>
           {arr.map((item) => (
             <div
               key={item.id}
@@ -125,7 +124,7 @@ const Blog = () => {
               </Link>
             </div>
           ))}
-        {/* </Slider> */}
+        </Slider>
       </div>
     </div>
   );
