@@ -2,12 +2,9 @@ details {
   overflow: hidden;
 }
 
-details summary {
-  cursor: pointer;
-}
-
 details[open] summary + p {
   max-height: 500px;
+  
   transition: max-height 0.3s ease-in-out;
 }
 
@@ -16,3 +13,4 @@ details summary + p {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
+

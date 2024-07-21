@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import './Services.css'
-
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Services = () => {
   const services = [
@@ -151,7 +151,7 @@ const Services = () => {
                     ))}
                   </ul>
                   <span className="text-black hover:text-white mt-2 hover:font-bold">
-                    ...read more
+                    <FaRegArrowAltCircleRight size={30}/>
                   </span>
                 </div>
               </div>
@@ -170,38 +170,39 @@ const Services = () => {
                   to={item.path}
                   className="text-black mt-2 hover:font-bold"
                 >
-                  ...read more
+                  <FaRegArrowAltCircleRight size={30}/>
                 </Link>
               </div>
             </div>
           </div>
         ))}
       </div>
+      {/* transition-all duration-300 */}
       <div className="p-10 pt-0 lg:mt-2 flex flex-col justify-center items-center">
         <h1 className="font-bold text-4xl max-sm:text-2xl">Frequently Asked Questions</h1>
         <h3 className="font-normal text-xl text-gray-500 mt-2">Your Queries, Our Answers</h3>
         <div className="flex flex-col gap-y-5">
-            <details className="group">
+            <details className="group cursor-pointer ">
               <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
               <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
             </details>
             <hr className="border-t-2 border-gray-300"/>
-            <details className="group">
+            <details className="group cursor-pointer">
               <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
               <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
             </details>
             <hr className="border-t-2 border-gray-300"/>
-            <details className="group">
+            <details className="group cursor-pointer">
               <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
               <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
             </details>
             <hr className="border-t-2 border-gray-300"/>
-            <details className="group">
+            <details className="group cursor-pointer">
               <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
               <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
             </details>
             <hr className="border-t-2 border-gray-300"/>
-            <details className="group">
+            <details className="group cursor-pointer">
               <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">What Is The Development Time For A New Website?</summary>
               <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.</p>
             </details>

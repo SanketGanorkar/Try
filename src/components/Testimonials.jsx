@@ -29,7 +29,7 @@ const Testimonials = () => {
       <div className="flex flex-col px-4 max-lg:w-screen">
         <div className="flex flex-row text-black max-sm:flex-col">
           <div>
-            <h5 className="font-bold  text-[#004bae] mt-12">
+            <h5 className="font-bold text-[#004bae] mt-12">
               TESTIMONIALS
             </h5>
             <h2 className="font-bold text-3xl mt-3">What Client Says About Us</h2>

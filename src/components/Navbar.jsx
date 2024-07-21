@@ -20,7 +20,7 @@ const Navbar = () => {
         />
         <ul className="flex flex-row max-sm:hidden items-center text-black list-none ml-auto font-[Roboto]">
           <li
-            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
+            className="mr-6 mb-3 text-[20px] font-medium cursor-pointer"
             onClick={() => {
               navigate("/");
               
@@ -29,19 +29,19 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </li>
           <li
-            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
+            className="mr-6 mb-3 text-[20px] font-medium cursor-pointer"
             onClick={() => navigate("/about")}
           >
             About Us
           </li>
           <li
-            className="relative group mr-4 mb-3 text-2xl font-medium cursor-pointer"
+            className="relative group mr-4 mb-3 text-[20px] font-medium cursor-pointer"
             onClick={() => navigate("/services")}
           >
             Services
           </li>
           <li
-            className="relative group mr-6 mb-3 text-2xl font-medium cursor-pointer"
+            className="relative group mr-6 mb-3 text-[20px] font-medium cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
@@ -49,7 +49,7 @@ const Navbar = () => {
             <a href="#blog">Blog</a>
           </li>
           <li
-            className="mr-6 mb-3 text-2xl font-medium cursor-pointer"
+            className="mr-6 mb-3 text-[20px] font-medium cursor-pointer"
             onClick={() => {
               navigate("/contact");
             }}

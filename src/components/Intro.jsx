@@ -112,11 +112,11 @@ const Intro = () => {
 
       {/* Grid Section */}
       <div className="p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
           {arr.map((item) => (
             <div
               key={item.id}
-              className="bg-white text-black p-6 rounded-2xl flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] h-[299px] w-[299px]"
+              className="bg-white text-black p-6 rounded-2xl flex flex-col items-center border-[#004bae] border-[1px] transition-all duration-300 hover:bg-[#004AAD] hover:text-white  hover:border-white hover:border-[1px] cursor-pointer h-[299px] w-[299px] hover:h-[305px] hover:w-[305px]"
             >
               <div className="text-4xl mb-4">{item.logo}</div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

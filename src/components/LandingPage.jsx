@@ -13,7 +13,7 @@ const LandingPage = () => {
         <Intro />
         <Trusted />
         <Trial />
-        <Team />
+        {/* <Team /> */}
         <Blog />
         <Testimonials />
         <Footer />

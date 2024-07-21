@@ -19,7 +19,7 @@ function Service(props) {
                     {services[param].topic}
                 </div>
             </div>
-            <div className="content bg-[#262626]">
+            <div className="content bg-white">
                 <div className="intro">
                     <div className="img-div">
                         <img
