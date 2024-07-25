@@ -104,7 +104,7 @@ const Blog = () => {
               <Link to={item.path}>
                 <img
                   src={item.img}
-                  className="w-full h-[200px] object-cover rounded-sm"
+                  className="w-full h-[200px] object-cover rounded-sm transition-all 300 hover:scale-95"
                 />
               </Link>
               <div className="p-4 flex flex-col items-start w-full">

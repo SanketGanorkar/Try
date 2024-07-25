@@ -119,7 +119,7 @@ const Services = () => {
   return (
     <div id="services" className="bg-white min-h-screen mt-[80px]">
       <div className="relative">
-        <div className="bg-abbg bg-cover bg-center h-[240px] opacity-75"></div>
+        <div className="bg-black h-[240px] opacity-15"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-4xl text-black mt-12 mb-9">
             <span className="ml-[15px] text-6xl">Our Services</span>

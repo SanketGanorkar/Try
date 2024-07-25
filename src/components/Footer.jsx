@@ -254,10 +254,11 @@ const Footer = () => {
           {/* Mobile view ends for this one*/}
         </>
       }
-
-      <div className="pt-2 px-2 pb-2 flex flex-col items-center mt-[40px] md:flex-row md:justify-around lg:justify-center lg:gap-[10%] bg-black text-white min-h-[40px] text-center border-white">
+      <div className="mt-2"><hr /></div>
+      
+      <div className="pt-2 px-2 pb-2 flex flex-col items-center mt-[10px] md:flex-row md:justify-around lg:justify-center lg:gap-[10%] bg-black text-white min-h-[40px] text-center border-white">
         <div className="flex flex-row justify-start pt-2 mb-2">
-          <Link to="/terms-and-conditions" className="mr-2 cursor-pointer hover:text-[#004AAD]">
+          <Link to="/terms-and-conditions" className="mr-10 cursor-pointer hover:text-[#004AAD]">
             Terms Conditions
           </Link>
           <Link to="/privacy-policy" className="cursor-pointer hover:text-[#004AAD]">
@@ -266,7 +267,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-2 px-2 pb-2 bg-black text-white min-h-[40px] mb-2 md:mb-0">
-          Copyright 2024 © All Rights Reserved | ArmourIQ
+          Copyright 2024 © All Rights Reserved , ArmourIQ
         </div>
 
         <div className="flex flex-row md:justify-end pt-2 space-x-4">

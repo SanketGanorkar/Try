@@ -3,8 +3,10 @@ import { FaUserCog } from "react-icons/fa";
 import { MdAccessibility } from "react-icons/md";
 import { FaDollarSign } from "react-icons/fa";
 import CountUp from "react-countup";
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
+  const navigate = useNavigate();
   const arr = [
     {
       id: 1,
@@ -37,10 +39,10 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%] max-sm:flex-col">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-white font-bold text-nowrap">
+          <h2 className="text-white font-bold text-nowrap max-sm:text-[11px]">
             DEMOCRATIZING CYBERSECURITY
           </h2>
-          <h2 className="text-white font-bold text-3xl max-sm:text-[11px]">
+          <h2 className="text-white font-bold text-3xl max-sm:text-xl">
             ASSESS → DEFEND → SECURE
           </h2>
           <p className="text-white mt-8">
@@ -58,7 +60,10 @@ const Intro = () => {
           </p>
 
           <div className="flex flex-col mt-9 sm:flex-row sm:mt-16">
-            <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer w-2/5">
+            <button
+              className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer w-2/5"
+              onClick={() => navigate("/services")}
+            >
               LEARN MORE
             </button>
             <div className="flex flex-col mt-4 sm:flex-row sm:ml-8 sm:mt-0 sm:gap-4">

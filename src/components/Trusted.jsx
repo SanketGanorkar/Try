@@ -92,27 +92,27 @@ const Trusted = () => {
       <div className="flex flex-row justify-center items-center flex-wrap mt-8 mb-5 ">
         <img
           src={Cashmap}
-          className="w-28 h-28 m-1 border-[2px] transition-all duration-300 hover:w-[120px] hover:h-[120px] cursor-pointer"
+          className="w-28 h-28 m-1 border-[2px] transition-all duration-300 hover:scale-110 cursor-pointer"
         />
         <img
           src={FoodIn}
-          className="w-28 h-28 m-1 hover:w-[120px] hover:h-[120px] transition-all duration-300 border-[2px] cursor-pointer"
+          className="w-28 h-28 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer"
         />
         <img
           src={Moneytalk}
-          className="w-28 h-28 m-1 hover:w-[120px] hover:h-[120px] transition-all duration-300 border-[2px] cursor-pointer"
+          className="w-28 h-28 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer"
         />
         <img
           src={Naviti}
-          className="w-28 h-28 m-1 hover:w-[120px] hover:h-[120px] transition-all duration-300 border-[2px] cursor-pointer"
+          className="w-28 h-28 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer"
         />
         <img
           src={Nudgebee}
-          className="w-28 h-28 m-1 hover:w-[120px] hover:h-[120px] transition-all duration-300 border-[2px] cursor-pointer"
+          className="w-28 h-28 m-1 htransition-all duration-300 hover:scale-110 border-[2px] cursor-pointer"
         />
         <img
           src={Suzie}
-          className="w-28 h-28 m-1 hover:w-[120px] hover:h-[120px] transition-all duration-300 border-[2px] cursor-pointer"
+          className="w-28 h-28 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer"
         />
       </div>
     </div>

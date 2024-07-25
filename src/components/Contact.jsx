@@ -143,6 +143,7 @@ const Contact = () => {
             height="450"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            sandbox="allow-same-origin allow-scripts"
           ></iframe>
         </div>
       </div>
