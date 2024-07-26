@@ -4,7 +4,7 @@ export const services = {
         image: "/Cloud.jpg",
         heading1: "Configuration Audit",
         heading2: "(AWS, Azure, Google & Other SaaS products)",
-        content: "At ArmourIQ, we specialise in safeguarding your digital assets through meticulous security audits tailored to your cloud environment. Our team of cybersecurity experts meticulously assesses your configurations to ensure they align with industry best audits practices and compliance standards. From access controls to data encryption, we leave no stone unturned in fortifying your cloud security posture.",
+        content: "Ensure your cloud infrastructure is secure with ArmourIQ's expert Cloud Security Configuration Audit service. Whether you operate on AWS, Azure, Google Cloud, or other SaaS platforms, our comprehensive audits help you identify and mitigate security risks effectively.",
         approaches: {
             head: "Our Approach",
             data: [
@@ -31,7 +31,7 @@ export const services = {
                 },
                 {
                     title: "Compliance Assurance",
-                    explain: "nsure adherence to regulatory requirements and industry standards with our detailed compliance reports."
+                    explain: "Ensure adherence to regulatory requirements and industry standards with our detailed compliance reports."
                 },
                 {
                     title: "Cost Efficiency",
@@ -43,7 +43,9 @@ export const services = {
                 },
             ]
         },
-        getInTouch: "Ensure your cloud infrastructure is secure with ArmourIQ's expert Cloud Security Configuration Audit service. Whether you operate on AWS, Azure, Google Cloud, or other SaaS platforms, our comprehensive audits help you identify and mitigate security risks effectively."
+        getInTouch: "At ArmourIQ, we specialise in safeguarding your digital assets through meticulous security audits tailored to your cloud environment. Our team of cybersecurity experts meticulously assesses your configurations to ensure they align with industry best practices and compliance standards. From access controls to data encryption, we leave no stone unturned in fortifying your cloud security posture.",
+
+        getStarted : "Protect your cloud environment with ArmourIQ's Cloud Security Configuration Audit. Contact us today to schedule a consultation and take the first step towards a more secure future."
     },
 
     mobile: {
@@ -51,7 +53,7 @@ export const services = {
         image: "/Mobile.jpg",
         heading1: "End-to-End Mobile Security",
         heading2: "( Safeguarding Your Devices and Data ) ",
-        content: "Ensure the highest level of protection for your mobile applications with ArmourIQ’s Mobile Security services. Our expert team is dedicated to defending your apps against the latest threats, ensuring your data remains secure and your users stay safe. Contact us today to we leave no stone unturned in fortifying your cloud security posture.",
+        content: "Ensure the highest level of protection for your mobile applications with ArmourIQ’s Mobile Security services. Our expert team is dedicated to defending your apps against the latest threats, ensuring your data remains secure and your users stay safe. Contact us today to learn how we can help you achieve robust mobile security.",
         approaches: {
             head: "Our Approach",
             data: [
@@ -82,11 +84,11 @@ export const services = {
             ]
         },
         benefits: {
-            head: "Key Benefits",
+            head: "What You Get",
             data: [
                 {
                     title: "Enhanced Security",
-                    explain: "Strengthen your defences against cyber threats with proactive identification and resolution of security gaps."
+                    explain: " Strengthen your mobile apps' defenses against cyber threats with proactive testing and remediation."
                 },
                 {
                     title: "Protect User Data",
@@ -109,10 +111,12 @@ export const services = {
             },
             {
                 head: "Source Code Review",
-                content: "Ensure the security of your mobile applications with ArmourIQ's Mobile Application Penetration Testing service. Our expert team rigorously assesses your mobile apps for vulnerabilities, providing actionable insights to strengthen their security and protect user data."
+                content: "ArmourIQ offers comprehensive Source Code Review services to identify and remediate security weaknesses in your mobile applications' source code. Our detailed analysis helps mitigate risks and ensure your apps meet the highest security standards."
             },
         ],
-        getInTouch: "Protect your mobile applications with ArmourIQ's Mobile Security services. Contact us today to schedule a consultation and discover how we can secure your mobile apps against emerging threats."
+        getInTouch: "Protect your mobile applications with ArmourIQ's Mobile Security services. Contact us today to schedule a consultation and discover how we can secure your mobile apps against emerging threats.",
+
+        getStarted : "Protect your mobile applications with ArmourIQ's Mobile Security services. Contact us today to schedule a consultation and discover how we can secure your mobile apps against emerging threats."
     },
 
     application: {
@@ -120,7 +124,7 @@ export const services = {
         image: "/Application.jpg",
         heading1: "End-to-End Mobile Security ",
         heading2: "( Safeguarding Your Devices and Data )",
-        content: "Ensure the highest level of protection for your mobile applications with ArmourIQ’s Mobile Security services. Our expert team is dedicated to defending your apps against the latest threats, ensuring your data remains secure and your users stay safe. Contact us today to leave no stone unturned in fortifying your cloud security posture.",
+        content: "Protect your applications with ArmourIQ’s comprehensive Application Security services. Our expert team ensures your apps are fortified against vulnerabilities and threats, providing robust security measures to keep your data safe. Trust ArmourIQ to deliver top-notch protection and peace of mind for your applications.",
         approaches: {
             head: "Our Approach",
             data: [
@@ -182,10 +186,10 @@ export const services = {
             },
             {
                 head: "Secure Software Development Lifecycle (SDLC) Review",
-                content: "ArmourIQ offers thorough Source Code Review services to uncover and remediate security weaknesses in your application's source code. Our detailed analysis provides actionable insights to enhance your code's security posture."
+                content: "ArmourIQ conducts Secure Software Development Lifecycle Reviews to assess your development processes. We provide guidance to integrate security best practices throughout your SDLC, minimizing risks from the early stages of application development."
             },
         ],
-        getInTouch: "Secure your applications with ArmourIQ's Application Security services. Contact us today to schedule a consultation and discover how we can strengthen your application security strategy."
+        getStarted: "Secure your applications with ArmourIQ's Application Security services. Contact us today to schedule a consultation and discover how we can strengthen your application security strategy."
     },
 
     audit: {
@@ -199,7 +203,7 @@ export const services = {
             data: [
                 {
                     approachHead: "Comprehensive Assessments",
-                    content: "Conduct in-depth vulnerability assessments, penetration tests, and configuration audits to identify and mitigate network security risks."
+                    content: "Conduct thorough audits, risk assessments, and compliance reviews to identify vulnerabilities and ensure regulatory adherence."
                 },
                 {
                     approachHead: "Customized Strategies",
@@ -259,7 +263,7 @@ export const services = {
             },
             {
                 head: "Incident Response Procedure",
-                content: "Prepare your organization to respond swiftly and effectively to security incidents with ArmourIQ's Written Incident Response Procedures. Our customized procedures help minimize impact and ensure a coordinated response."
+                content: "ArmourIQ conducts thorough Threat Assessments and Risk Analyses to identify potential threats and vulnerabilities. We provide actionable insights to prioritize security measures and mitigate risks effectively."
             },
             {
                 head: "Third Party Risk Management Program",
@@ -282,7 +286,7 @@ export const services = {
                 content: "Secure your mergers and acquisitions with ArmourIQ's Cyber Security Assessments. We assess the cybersecurity risks associated with M&A activities to protect your organization's assets and continuity."
             }
         ],
-        getInTouch: "Secure your network with ArmourIQ's Audit & Compliance services. Contact us today to schedule a consultation and discover how we can strengthen your security and compliance posture."
+        getStarted: "Secure your network with ArmourIQ's Audit & Compliance services. Contact us today to schedule a consultation and discover how we can strengthen your security and compliance posture."
     },
 
     awareness: {
@@ -368,7 +372,7 @@ export const services = {
                 },
                 {
                     title: "Compliance Assurance",
-                    explain: "You ensure your security practices meet regulatory requirements and industry standards, demonstrating your commitment to maintaining a robust and compliant security framework."
+                    explain: "You ensure your security practices meet regulatory requirements and industry standards, demonstrating our commitment to maintaining a robust and compliant security framework."
                 },
                 {
                     title: "Continuous Improvement",
@@ -394,7 +398,7 @@ export const services = {
                 content: "Continuously monitor and assess the effectiveness of your security measures. Make necessary adjustments to maintain robust and adaptive security practices."
             }
         ],
-        getInTouch: "Protect your organization with ArmourIQ’s Maturity Assessment services. Contact us today to schedule an evaluation and take the first step towards achieving industry-leading security standards."
+        getStarted: "Protect your organization with ArmourIQ’s Maturity Assessment services. Contact us today to schedule an evaluation and take the first step towards achieving industry-leading security standards."
     },
 
     network: {
@@ -467,7 +471,7 @@ export const services = {
                 content: "ArmourIQ offers detailed Firewall Rule Review services to evaluate and optimize your firewall configurations. We verify rule effectiveness, eliminate unnecessary rules, and strengthen your firewall's ability to defend against threats."
             }
         ],
-        getInTouch: "Secure your network with ArmourIQ's Network Security services. Contact us today to schedule a consultation and discover how we can enhance your network security strategy."
+        getStarted: "Secure your network with ArmourIQ's Network Security services. Contact us today to schedule a consultation and discover how we can enhance your network security strategy."
     },
 
     soc: {
@@ -489,7 +493,7 @@ export const services = {
                 },
                 {
                     approachHead: "Continuous Improvement & Adaptation",
-                    content: "Ensuring ongoing resilience through iterative updates & strategic adjustments. We prioritize proactive measures to maintain robust security protocols."
+                    content: "Ensuring ongoing resilience through iterative updates and strategic adjustments."
                 },
                 {
                     approachHead: "Collaborative Support & Training",
@@ -506,6 +510,10 @@ export const services = {
                 },
                 {
                     title: "Expert Incident Response",
+                    explain: "Minimize the impact of security incidents with our rapid response and digital forensics expertise. Ensure a swift recovery and reduce downtime."
+                },
+                {
+                    title: "Strategic Security Guidance",
                     explain: "Strengthen your security framework with insights from our experienced advisors. Receive customized recommendations and support to address your unique challenges."
                 },
                 {
@@ -532,7 +540,7 @@ export const services = {
                 content: "Test and improve your incident response plans with ArmourIQ’s Tabletop Exercises. Our simulated scenarios prepare your team to handle actual cyber incidents with confidence."
             }
         ],
-        getInTouch: "Protect your organization with ArmourIQ’s SOC & Global Threat Management Services. Contact us today to schedule a consultation and discover how we can help you stay ahead of cyber threats and ensure robust security."
+        getStarted: "Protect your organization with ArmourIQ’s SOC & Global Threat Management Services. Contact us today to schedule a consultation and discover how we can help you stay ahead of cyber threats and ensure robust security."
     },
 
     staff: {
@@ -574,22 +582,10 @@ export const services = {
         image: "/Virtual.jpeg",
         heading1: "Solidify Your Cybersecurity Strategy with",
         heading2: "Our Virtual Chief Information Security Officer (vCISO) Services",
-        content: "Our vCISO services provide strategic guidance, risk management, and compliance expertise tailored to your organization’s unique needs. Ensure a robust security posture with proactive insights and cost-effective solutions. Partner with us for virtual CISO consulting services that empower your business to navigate the ever-evolving cybersecurity landscape with confidence.",
+        content: "Our vCISO services provide strategic guidance, risk management, and compliance expertise tailored to your organisation’s unique needs. Ensure a robust security posture with proactive insights and cost-effective solutions. Partner with us for virtual CISO consulting services that empower your business to navigate the ever-evolving cybersecurity landscape with confidence.",
         approaches: {
             head: "How ArmourIQ Can Help You",
             data: [
-                {
-                    approachHead: "Problem Identification & Analysis",
-                    content: "Recognizing and understanding the unique cybersecurity challenges your organization faces. Utilizing advanced threat intelligence and monitoring to detect potential risks and vulnerabilities."
-                },
-                {
-                    approachHead: "Tailored Solutions Development",
-                    content: "Designing and implementing customized security solutions that align with your organization's specific needs and objectives. Focused on mitigating identified risks and fortifying your security posture."
-                },
-                {
-                    approachHead: "Continuous Improvement & Adaptation",
-                    content: "Ensuring ongoing resilience through iterative updates & strategic adjustments. We prioritize proactive measures to maintain robust security protocols."
-                },
                 {
                     approachHead: "Planning and Budgeting",
                     content: "Developing and implementing a comprehensive cybersecurity strategy, secure information security architecture, and budgets for cybersecurity initiatives and incident response plans that align with business goals."
@@ -600,7 +596,7 @@ export const services = {
                 },
                 {
                     approachHead: "Security Policy Development",
-                    content: "Formulating and enforcing security policies and procedures to guide cybersecurity efforts."
+                    content: "Formulating and enforceing security policies and procedures to guide cybersecurity efforts."
                 },
                 {
                     approachHead: "Risk Management",
@@ -631,6 +627,18 @@ export const services = {
                     content: "Coordinating emergency response efforts during critical security incidents, minimizing downtime and impact."
                 },
                 {
+                    approachHead: "Security Governance",
+                    content: "Defining and enforcing security governance structures and protocols, ensuring accountability and responsibility."
+                },
+                {
+                    approachHead: "Incident Investigation and Reporting",
+                    content: "Overseeing investigations into security incidents, ensuring thorough understanding, accountability, and resolution."
+                },
+                {
+                    approachHead: "Emergency Response Coordination",
+                    content: "Coordinating emergency response efforts during critical security incidents, minimizing downtime and impact."
+                },
+                {
                     approachHead: "Board and Executive Reporting",
                     content: "Providing regular reports to the board and executive leadership, keeping them informed about the organization’s cybersecurity status."
                 },
@@ -640,7 +648,7 @@ export const services = {
                 }
             ],
         },
-        benifits: {
+        benefits: {
             head: "How Our vCISO Service Will Benefit You",
             data: [
                 {
@@ -669,6 +677,6 @@ export const services = {
                 }
             ]
         },
-        getInTouch: "Ready to strengthen your organization’s cybersecurity strategy? Partner with ArmourIQ’s Virtual Chief Information Security Officer (vCISO) services today. Contact us to schedule a consultation and discover how our tailored expertise can safeguard your business from cyber threats while ensuring compliance and strategic alignment with your goals."
+        getStarted: "Ready to strengthen your organization’s cybersecurity strategy? Partner with ArmourIQ’s Virtual Chief Information Security Officer (vCISO) services today. Contact us to schedule a consultation and discover how our tailored expertise can safeguard your business from cyber threats while ensuring compliance and strategic alignment with your goals."
     },
 }

@@ -82,6 +82,11 @@ function Service(props) {
               <p className="extra-con-para">{services[param].getInTouch}</p>
             </div>
           </div>
+          <div className="flex flex-col mt-5 lg:px-1 ml-7 max-sm:ml-1">
+            <button className="bg-black text-white w-[105px] text-center rounded-sm p-1">Get Started</button>
+            <p className="mt-2">{services[param].getStarted}</p>
+
+          </div>
         </div>
       </div>
       <Footer />
