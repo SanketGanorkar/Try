@@ -1,4 +1,5 @@
 import { MdOutlineEmail } from "react-icons/md";
+import newbg from "../../public/assets/newbg.jpeg"
 import {
   FaBullseye,
   FaEye,
@@ -119,23 +120,24 @@ const AboutUs = () => {
   ];
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="flex flex-col bg-white mt-3">
         <div>
           <div className="relative">
+            {/* <img src={newbg} className="max-sm:h-[200px] h-[300px] w-full" /> */}
             <div className="bg-black max-sm:h-[200px] h-[300px] opacity-15"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-4xl md:text-7xl text-black mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+              <div className="text-4xl md:text-6xl text-black font-bold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
                 About Us
               </div>
             </div>
           </div>
-          <img src={about} className="ml-4 md:ml-8 mt-11 w-[95%] rounded-2xl" />
-          <h1 className="text-black font-semibold text-3xl ml-4 md:ml-8 mt-12 max-sm:ml-[120px]">
+          <img src={about} className="ml-4 md:ml-[60px] mt-11 w-[85%] rounded-2xl" />
+          <h1 className="text-black font-semibold text-3xl ml-4 md:ml-[65px] mt-[70px] max-sm:ml-[120px]">
             About Us
           </h1>
           <div>
-            <p className="mx-4 md:ml-8 text-black font-normal text-sm md:text-xl mt-3 md:w-[90%] max-sm:ml-9">
+            <p className="mx-4 md:ml-[65px] text-black font-normal text-sm md:text-xl mt-3 md:w-[90%] max-sm:ml-9">
               At the heart of innovation, where technology meets craftsmanship,
               our company stands as a beacon of transformation and excellence.
               We are not merely cybersecurity experts we are pioneers committed
@@ -145,16 +147,16 @@ const AboutUs = () => {
               them towards their zenith.
             </p>
           </div>
-          <h1 className="text-black font-semibold text-3xl md:text-4xl ml-4 md:ml-12 mt-[55px] mb-3 max-sm:ml-[90px]">
+          <h1 className="text-black font-semibold text-3xl md:text-3xl ml-4 md:ml-[65px] mt-[55px] mb-3 max-sm:ml-[90px]">
             Why Choose Us
           </h1>
-          <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-6 lg:mt-0 ">
+          <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-[47px] lg:mt-0 ">
             <div className="w-full lg:w-1/2 px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[400px] ml-10 md:ml-0 max-sm:gap-y-2 max-sm:ml-5">
                 {visionMissionValues.map((item) => (
                   <div
                     key={item.id}
-                    className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[310px] h-[310px] hover:w-[320px] hover:h-[320px] transition-all duration-300"
+                    className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[310px] h-[310px] hover:w-[320px] hover:h-[320px] transition-all duration-300 md:mt-3"
                   >
                     <div className="flex items-center mb-2">
                       <div className="mr-2">{item.logo}</div>
@@ -242,14 +244,14 @@ const AboutUs = () => {
           </div>
           <div className="mt-[70px] flex flex-col lg:flex-row">
             <div className="flex flex-col">
-              <h2 className="text-black font-semibold text-2xl ml-4 md:ml-12">
+              <h2 className="text-black font-semibold text-2xl ml-4 md:ml-[65px] md:mt-8">
                 Why choose us
               </h2>
               <div>
-                <h4 className="text-black font-bold text-3xl w-[90%] lg:w-[500px] ml-4 md:ml-12 mt-3">
+                <h4 className="text-black font-bold text-3xl w-[90%] lg:w-[500px] ml-4 md:ml-[65px] mt-3">
                   We Are The Best To Help You Secure Your Company's Security
                 </h4>
-                <p className="text-black font-normal text-sm md:text-lg lg:text-xl w-[90%] lg:w-[500px] ml-4 md:ml-12 mt-3">
+                <p className="text-black font-normal text-sm md:text-lg lg:text-xl w-[90%] lg:w-[500px] ml-4 md:ml-[65px] mt-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
@@ -257,7 +259,7 @@ const AboutUs = () => {
                 <div className="flex flex-col md:flex-row">
                   <img
                     src={cybersec_engineer}
-                    className="h-[200px] w-[90%] md:w-[280px] ml-4 md:ml-12 rounded-lg mt-2"
+                    className="h-[200px] w-[90%] md:w-[280px] ml-4 md:ml-[65px] rounded-lg mt-2 "
                   />
                   <div className="flex flex-col">
                     <div className="flex flex-row">
@@ -290,15 +292,15 @@ const AboutUs = () => {
             </div>
             <img
               src={cybersec_tem}
-              className="h-[500px] w-[90%] md:w-[400px] ml-4 lg:ml-[150px] rounded-lg mt-4 md:mt-0"
+              className="h-[500px] w-[90%] md:w-[400px] ml-4 lg:ml-[150px] rounded-lg mt-4 md:mt-8"
             />
           </div>
-          <div className="text-black mx-4 md:ml-10 text-2xl md:text-3xl font-semibold mt-[65px]">
+          <div className="text-black mx-4 md:ml-[65px] text-2xl md:text-3xl font-semibold mt-[65px]">
             Discover exceptional experiences through testimonials from our
             satisfied customers
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:ml-[25px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 p-4 md:p-10">
             {sections.map((section) => (
               <div
@@ -319,37 +321,37 @@ const AboutUs = () => {
           </div>
         </div>
         <Team />
-        <div className="flex flex-col md:flex-row justify-center mt-[70px] max-sm:mt-[70px]">
-          <div className="flex flex-col max-sm:ml-[67px]">
-            <h1 className="text-black font-semibold">
+        <div className="flex flex-col md:flex-row justify-center mt-[70px] max-sm:mt-[70px] ">
+          <div className="flex flex-col max-sm:ml-[67px] ">
+            <h1 className="text-black font-semibold md:ml-12 text-[18px] whitespace-nowrap">
               Secure Your Business with Armour IQ
             </h1>
-            <h2 className="text-black font-semibold">
+            <h2 className="text-black font-semibold md:ml-12 text-[18px]">
               Have questions or need help?{" "}
             </h2>
-            <h2 className="text-black font-semibold">
+            <h2 className="text-black font-semibold md:ml-12 text-[18px]">
               Our experts are here for you.
             </h2>
           </div>
-          <div className="max-md:mt-10 mx-4 md:ml-[120px] max-sm:mt-2">
+          <div className="max-md:mt-10 mx-4 md:ml-[90px] max-sm:mt-2">
             <div className="flex flex-col items-center md:items-start mb-4">
               <h3 className="text-black font-bold max-sm:mt-3">
                 Contact Us to
               </h3>
               <ul className="list-disc list-inside mt-2">
-                <li>Discover tailored security solutions</li>
-                <li>Get a free security assessment</li>
-                <li>Receive prompt support</li>
+                <li  className="whitespace-nowrap">Discover tailored security solutions</li>
+                <li  className="whitespace-nowrap">Get a free security assessment</li>
+                <li  className="whitespace-nowrap">Receive prompt support</li>
               </ul>
               <div className="flex flex-col max-sm:mt-5 mt-4">
-                <div className="flex flex-row items-center mb-2">
-                  <FaPhoneAlt color="#004AAD" className="mr-2" size={29} />
-                  <h5 className="text-black font-semibold ml-2 mb-4">
+                <div className="flex flex-row items-center mb-0">
+                  <FaPhoneAlt color="#004AAD" className="mr-2" size={17} />
+                  <h5 className="text-black font-semibold ml-1 mb-4 mt-1 text-[17px]">
                     +91 6306867803
                   </h5>
                 </div>
-                <div className="flex flex-row items-center mb-4">
-                  <MdOutlineEmail color="#004AAD" className="mr-2" size={40} />
+                <div className="flex flex-row items-center mb-2">
+                  <MdOutlineEmail color="#004AAD" className="mr-2" size={22} />
                   <h5 className="text-black font-semibold ml-1">
                     hello@armourIQ.com
                   </h5>
@@ -357,7 +359,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="mx-4 md:ml-[100px] mb-8">
+          <div className="mx-9 md:ml-[100px] mb-8">
             <div className="flex flex-col text-black">
               <input
                 type="text"

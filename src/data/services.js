@@ -329,7 +329,7 @@ export const services = {
                 }
             ]
         },
-        getInTouch: "Empower your workforce with ArmourIQ’s Security Awareness Program. Contact us today to implement training that strengthens your organization’s defense against cyber threats and promotes a proactive security culture."
+        getStarted: "Empower your workforce with ArmourIQ’s Security Awareness Program. Contact us today to implement training that strengthens your organization’s defense against cyber threats and promotes a proactive security culture."
     },
 
     maturity: {
@@ -574,7 +574,7 @@ export const services = {
                 }
             ]
         },
-        getInTouch: "Enhance your cybersecurity capabilities with ArmourIQ’s Staff Augmentation services. Contact us today to discuss your staffing needs and leverage our expertise effectively."
+        getStarted: "Enhance your cybersecurity capabilities with ArmourIQ’s Staff Augmentation services. Contact us today to discuss your staffing needs and leverage our expertise effectively."
     },
 
     virtual: {

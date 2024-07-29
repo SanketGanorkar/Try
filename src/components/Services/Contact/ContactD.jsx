@@ -4,19 +4,19 @@ import { MdOutlineEmail } from "react-icons/md";
 const ContactD = () => {
   return (
     <div className="">
-      <div className="mt-[100px] sm:ml-5 flex flex-row  max-sm:mt-[60px] max-md:flex-col gap-4">
+      <div className="mt-[20px] sm:ml-5 flex flex-row max-sm:mt-[60px] max-md:flex-col gap-4">
         <div className="flex flex-col ">
           <div className="flex flex-row ">
-            <FaPhone color="#004bae" className="ml-4 " size={26} />
+            <FaPhone color="#004bae" className="ml-4 mt-4" size={26} />
             <div className="flex flex-col">
-              <h5 className="text-white ml-5 ">+1 469 296 9672</h5>
-              <h5 className="text-white ml-5 ">+91 9302864102</h5>
+              <h5 className="text-black ml-5 mt-2">+1 469 296 9672</h5>
+              <h5 className="text-black ml-5">+91 9302864102</h5>
             </div>
           </div>
           <div className="flex flex-row">
-            <MdOutlineEmail color="#004bae" className="ml-3 mt-4" size={36} />
+            <MdOutlineEmail color="#004bae" className="ml-4 mt-4" size={36} />
             <div className="flex flex-col">
-              <h5 className="text-white ml-3 mt-5">hello@armouriq.com</h5>
+              <h5 className="text-black ml-3 mt-5">hello@armouriq.com</h5>
             </div>
           </div>
         </div>
@@ -30,19 +30,19 @@ const ContactD = () => {
             <input
               type="number"
               placeholder="Your Phone Number"
-              className="p-3 w-[80%] text-white border-[#004bae] border-[1px] bg-[#000000]"
+              className="p-3 w-[50%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
             />
             <input
               type="email"
               placeholder="Your Mail"
-              className="text-white w-[50%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
+              className="text-white h-[40px] w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
             />
           </div>
-          <input
+          {/* <input
             type="text"
             placeholder="Subject"
             className=" w-full pl-3 h-[40px] border-[#004bae] border-[1px] bg-[#000000] my-3"
-          />
+          /> */}
           <textarea
             type="text"
             placeholder="Your Message"

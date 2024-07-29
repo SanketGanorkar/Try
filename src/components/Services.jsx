@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+// import newbg from "../../public/assets/newbg.jpeg"
 import './Services.css'
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
@@ -119,10 +120,10 @@ const Services = () => {
   return (
     <div id="services" className="bg-white min-h-screen mt-[80px]">
       <div className="relative">
-        <div className="bg-black h-[240px] opacity-15"></div>
+        <div className=" bg-black opacity-15 h-[240px]" ></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-4xl text-black mt-12 mb-9">
-            <span className="ml-[15px] text-6xl">Our Services</span>
+            <span className="ml-[15px] text-6xl text-black font-bold">Our Services</span>
           </div>
         </div>
       </div>
@@ -151,7 +152,8 @@ const Services = () => {
                     ))}
                   </ul>
                   <span className="text-black hover:text-white mt-2 hover:font-bold">
-                    <FaRegArrowAltCircleRight size={30}/>
+                    {/* <FaRegArrowAltCircleRight color="blue" size={30} className=""/> */}
+                    <FaRegArrowAltCircleRight size={30} className=""/>
                   </span>
                 </div>
               </div>

@@ -61,14 +61,14 @@ const Team = () => {
           </div>
         ))}
       </div> */}
-      <div className="flex flex-col mt-5 w-full px-4 lg:px-0">
+      <div className="flex flex-col mt-5 w-full px-4 lg:px-0 md:ml-[65px]">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-center lg:space-x-4">
           <img
             src={team2}
-            className="h-[200px] lg:h-[345px] w-full lg:w-[445px] object-cover rounded-xl mb-4 lg:mb-0 sm:ml-6"
+            className="h-[200px] lg:h-[325px] w-full lg:w-[405px] object-cover rounded-xl mb-4 lg:mb-0 sm:ml-6"
           />
-          <div className="flex flex-col lg:ml-4 text-center lg:text-left md:ml-0">
-            <p className="text-black text-base lg:text-lg mr-2">
+          <div className="flex flex-col lg:ml-2 text-center lg:text-left md:ml-0">
+            <p className="text-black text-balance lg:text-lg mr-2 ">
               At ArmourIQ, we are dedicated to democratizing cybersecurity,
               ensuring that businesses of all sizes can defend against digital
               threats with confidence. Our team is committed to delivering
@@ -76,7 +76,7 @@ const Team = () => {
               of each client.
             </p>
             <br />
-            <p className="text-black text-base lg:text-lg mr-3">
+            <p className="text-black text-balance lg:text-lg mr-3">
               Rather than focusing on individual team members, we emphasize our
               collective expertise and collaborative approach. This allows us to
               maintain a strong commitment to quality, reliability, and
@@ -85,7 +85,7 @@ const Team = () => {
               affordable.
             </p>
             <br />
-            <p className="text-black text-base lg:text-lg mr-3">
+            <p className="text-black text-balance lg:text-lg mr-3">
               Our dedication to transparency fosters trust and long-lasting
               partnerships built on mutual success. We believe that informed
               clients are empowered clients, which is why we maintain open
@@ -97,10 +97,10 @@ const Team = () => {
         <div className="flex flex-col lg:flex-row-reverse lg:items-start lg:justify-center lg:space-x-reverse lg:space-x-4 mt-8 lg:mt-16">
           <img
             src={team1}
-            className="h-[200px] mr-3 lg:h-[345px] w-full lg:w-[445px] object-cover rounded-xl mb-4 lg:mb-0"
+            className="h-[200px] mr-[70px] lg:h-[325px] w-full lg:w-[405px] object-cover rounded-xl mb-4 lg:mb-0"
           />
           <div className="flex flex-col lg:ml-4 text-center lg:text-left">
-            <p className="text-black text-base lg:text-lg sm:ml-6">
+            <p className="text-black text-pretty lg:text-lg sm:ml-6">
               At ArmourIQ, we offer a comprehensive suite of cybersecurity
               services, including risk assessment, threat detection, incident
               response, and continuous monitoring. Our innovative solutions are
@@ -108,7 +108,7 @@ const Team = () => {
               robust protection against both current and emerging cyber threats.
             </p>
             <br />
-            <p className="text-black text-base lg:text-lg sm:ml-6">
+            <p className="text-black text-pretty lg:text-lg sm:ml-6">
               We understand that every business is unique, which is why we take
               a customized approach to each project. Our experts work closely
               with you to understand your specific needs and challenges,
@@ -119,7 +119,7 @@ const Team = () => {
               you.
             </p>
             <br />
-            <p className="text-black text-base lg:text-lg sm:ml-6">
+            <p className="text-black text-pretty lg:text-lg sm:ml-6">
               Explore how we can empower your organization to assess, defend,
               and secure your digital assets with the same level of security as
               industry leaders. Contact us today to learn more about our

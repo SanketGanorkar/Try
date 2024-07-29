@@ -1,17 +1,19 @@
 import React from "react";
 import img from "/assets/ServiceBg.jpg";
 import { services } from "../../data/services.js";
+import { FaCheck } from "react-icons/fa";
 import Footer from "./../Footer.jsx";
 import { useParams } from "react-router-dom";
+import Contact from "./Contact/ContactD.jsx";
 
 function Service(props) {
   const { param } = useParams();
 
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-x-hidden">
       <div className="relative">
-        <img src={img} className="topic-bg" />
-        {/* <div className="topic-bg"></div> */}
+        {/* <img src={img} className="topic-bg" /> */}
+        <div className="topic-bg"></div>
         <div className="topic">{services[param].topic}</div>
       </div>
       <div className="content bg-white">
@@ -50,7 +52,7 @@ function Service(props) {
             ))}
           </ul>
 
-          {services[param].benefits && (
+          {/* {services[param].benefits && (
             <div className="benefits-content bg-white">
               <h1 className="key-benefit text-black text-3xl font-bold ml-8 mt-8 max-sm:ml-2 mmax-sm:mb-2">
                 {services[param].benefits.head}
@@ -67,7 +69,29 @@ function Service(props) {
                 ))}
               </ul>
             </div>
+          )} */}
+          {services[param].benefits && (
+            <div className="benefits-container bg-white p-6 border rounded-lg shadow-sm">
+              <h1 className="key-benefit text-black text-3xl font-bold ml-8 mt-8 max-sm:ml-2 max-sm:mb-2">
+                {services[param].benefits.head}
+              </h1>
+              <ul className="benefits-list">
+                {services[param].benefits.data.map((item, index) => (
+                  <li
+                    className="benefits-item text-base sm:text-lg mb-4 max-sm:ml-2 text-black max-sm:mt-3 flex items-start"
+                    key={index}
+                  >
+                    <FaCheck className="mr-2 mt-3 text-[#004AAD]" />
+                    <div className="benefits-text">
+                      <span className="font-semibold">{item.title}</span> -{" "}
+                      {item.explain}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
+
           <div className="flex flex-col bg-white">
             {services[param].extra &&
               services[param].extra.map((item, index) => (
@@ -82,10 +106,18 @@ function Service(props) {
               <p className="extra-con-para">{services[param].getInTouch}</p>
             </div>
           </div>
-          <div className="flex flex-col mt-5 lg:px-1 ml-7 max-sm:ml-1">
-            <button className="bg-black text-white w-[105px] text-center rounded-sm p-1">Get Started</button>
-            <p className="mt-2">{services[param].getStarted}</p>
-
+          <div className="flex flex-row mt-10 lg:px-1 ml-7 max-sm:ml-1">
+            <div>
+              <button className="bg-black text-white w-[105px] text-center rounded-sm p-1">
+                Get Started
+              </button>
+              <p className="mt-2 md:w-full w-full">
+                {services[param].getStarted}
+              </p>
+            </div>
+            <div>
+              <Contact />
+            </div>
           </div>
         </div>
       </div>

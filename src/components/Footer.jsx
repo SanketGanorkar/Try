@@ -30,7 +30,7 @@ const Footer = () => {
   }, [])
   const navigate = useNavigate();
   return (
-    <div className="border-t-[1px] bg-black pb-2">
+    <div className="border-t-[1px] bg-black pb-2 w-full">
       <div className="flex flex-col md:flex-row lg:justify-center 2xl:gap-16">
         {/* First column*/}
         <div className="flex flex-col mb-4 md:mb-0">
@@ -55,13 +55,13 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-row mb-4">
-              <FaPhoneVolume color="#FFFFFF" className="ml-4 mt-1" size={20} />
+              <FaPhoneVolume color="#FFFFFF" className="ml-4 mt-2" size={18} />
               <div className="flex flex-col">
-                <h5 className="text-white ml-5 mt-1">+1 469 296 9672</h5>
+                <h5 className="text-white ml-4 mt-1">+1 469 296 9672</h5>
               </div>
             </div>
             <div className="flex flex-row mb-4">
-              <MdOutlineEmail color="#FFFFFF" className="ml-3 mt-1" size={30} />
+              <MdOutlineEmail color="#FFFFFF" className="ml-3 mt-1" size={27  } />
               <div className="flex flex-col">
                 <h5 className="text-white ml-3 mt-1">hello@armouriq.com</h5>
               </div>
@@ -256,8 +256,8 @@ const Footer = () => {
       }
       <div className="mt-2"><hr /></div>
       
-      <div className="pt-2 px-2 pb-2 flex flex-col items-center mt-[10px] md:flex-row md:justify-around lg:justify-center lg:gap-[10%] bg-black text-white min-h-[40px] text-center border-white">
-        <div className="flex flex-row justify-start pt-2 mb-2">
+      <div className="pt-0 px-2 pb-2 flex flex-col items-center mt-[5px] md:flex-row md:justify-around lg:justify-center lg:gap-[10%] bg-black text-white min-h-[40px] text-center border-white">
+        <div className="flex flex-row justify-start pt-2 mb-3">
           <Link to="/terms-and-conditions" className="mr-10 cursor-pointer hover:text-[#004AAD]">
             Terms Conditions
           </Link>
