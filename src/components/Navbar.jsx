@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => navigate("/services")}
           >
             Services
-            <AnimatePresence>
+            {/* <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0, scaleY: 0.5 }}
                 animate={{ opacity: 1, scaleY: 1 }}
@@ -94,8 +94,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </motion.div>
-            </AnimatePresence>
-            ;
+            </AnimatePresence> */}
           </li>
           <li
             className="relative group mr-6 mb-3 text-[20px] font-medium cursor-pointer"
