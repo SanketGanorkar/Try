@@ -3,12 +3,59 @@ import img from "/assets/ServiceBg.jpg";
 import { services } from "../../data/services.js";
 import { FaCheck } from "react-icons/fa";
 import Footer from "./../Footer.jsx";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import Contact from "./Contact/ContactD.jsx";
 
 function Service(props) {
   const { param } = useParams();
-
+  const navigate = useNavigate();
+  const sidebar = [
+    {
+      id: 1,
+      title: "Cloud security",
+      path: "/services/cloud",
+    },
+    {
+      id: 2,
+      title: "Mobile security",
+      path: "/services/mobile",
+    },
+    {
+      id: 3,
+      title: "Application security",
+      path: "/services/application",
+    },
+    {
+      id: 4,
+      title: "Network Security",
+      path: "/services/network",
+    },
+    {
+      id: 5,
+      title: "Audit & Compliance",
+      path: "/services/audit",
+    },
+    {
+      id: 6,
+      title: "SOC & Services",
+      path: "/services/soc",
+    },
+    {
+      id: 7,
+      title: "Maturity Assessment",
+      path: "/services/maturity",
+    },
+    {
+      id: 8,
+      title: "Virtual CISO as a Service",
+      path: "/services/virtual",
+    },
+    {
+      id: 9,
+      title: "Security Program",
+      path: "/services/awareness",
+    },
+  ];
   return (
     <div className="bg-black overflow-x-hidden">
       <div className="relative">
@@ -18,63 +65,71 @@ function Service(props) {
       </div>
       <div className="content bg-white">
         <div className="intro">
-          <div className="img-div">
-            <img
-              src={`../assets${services[param].image}`}
-              className="image-in-service"
-            />
-          </div>
-          <div className="intro-left">
-            <div className="heading">
-              {services[param].heading1} <br className="hidden sm:block" />{" "}
-              {services[param].heading2}
+          <div className="flex flex-col">
+            <div className="img-div">
+              <img
+                src={`../assets${services[param].image}`}
+                className="image-in-service"
+              />
             </div>
-            <p className="intro-content">{services[param].content}</p>
+            <div className="intro-left">
+              <div className="heading">
+                {services[param].heading1} <br className="hidden sm:block" />{" "}
+                {services[param].heading2}
+              </div>
+              <p className="intro-content">{services[param].content}</p>
+            </div>
+          </div>
+          <div className="bg-[#F6F5F5] h-auto w-[400px] rounded-[15px] border-black border-[1px] max-sm:ml-2 mr-[140px]">
+            <div className="flex flex-col mt-3 ">
+              <h2 className="text-black font-semibold ml-6 text-2xl">
+                Our Services
+              </h2>
+              <div className="mt-2 ml-6 flex flex-col mb-3 mr-4">
+                <div className=" h-auto w-[320px] flex flex-col">
+                  {sidebar.map((item) => (
+                    <Link
+                      to={item.path}
+                      key={item.id}
+                      className="text-white min-h-[31px] bg-[#004bae] font-semibold text-[18px] text-start mt-1 mb-3 p-3 rounded-md cursor-pointer transform transition-transform duration-300 hover:scale-105 "
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="from-approach">
-          <div className="approach-head">{services[param].approaches.head}</div>
-          <ul className="approach-list">
-            {services[param].approaches.data?.map((item, index) => (
-              <li
-                className="text-lg border-black border-[1px] rounded-lg hover:bg-black group hover:scale-105 transition-all 500 cursor-pointer"
-                key={index}
-              >
-                <div className="list-content">
-                  <div className="text-black font-semibold text-lg sm:text-3xl mb-2 group-hover:text-white">
-                    {item.approachHead}
-                  </div>
-                  <div className="text-black group-hover:text-white">
-                    {item.content}
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-
-          {/* {services[param].benefits && (
-            <div className="benefits-content bg-white">
-              <h1 className="key-benefit text-black text-3xl font-bold ml-8 mt-8 max-sm:ml-2 mmax-sm:mb-2">
-                {services[param].benefits.head}
-              </h1>
-              <ul className="benefits-list">
-                {services[param].benefits.data.map((item, index) => (
+          <h1 className="md:ml-8 text-black text-3xl font-bold ml-8 mt-8 max-sm:ml-2 max-sm:mb-2">
+            {services[param].approaches.head}
+          </h1>
+          {services[param].benefits && (
+            <div className="md:mx-8 mt-5 p-6 rounded-lg shadow-sm bg-[#F6F5F5] md:w-[70%]">
+              <ul className="pt-1 md:ml-4 ml-4 text-black list-disc-custom">
+                {services[param].approaches.data?.map((item, index) => (
                   <li
-                    className="text-base sm:text-lg mb-4 ml-8 max-sm:ml-2 text-black max-sm:mt-3"
+                    className=" text-base sm:text-lg mb-4 max-sm:ml-2 text-black max-sm:mt-3 flex items-center list-disc gap-2"
                     key={index}
                   >
-                    <span className="font-semibold">{item.title}</span> -{" "}
-                    {item.explain}
+                    {/* <div className="bg-black rounded-full h-[6px] w-[6px]"></div> */}
+                    <div className="leading-loose text-pretty">
+                      <span className="font-semibold">{item.approachHead}</span>{" "}
+                      - {item.content}
+                    </div>
                   </li>
                 ))}
               </ul>
             </div>
-          )} */}
+          )}
+
+          {/* Original  */}
+          <h1 className="key-benefit text-black text-3xl font-bold mt-8 max-sm:mb-2">
+            {services[param].benefits.head}
+          </h1>
           {services[param].benefits && (
             <div className="benefits-container bg-white p-6 border rounded-lg shadow-sm">
-              <h1 className="key-benefit text-black text-3xl font-bold ml-8 mt-8 max-sm:ml-2 max-sm:mb-2">
-                {services[param].benefits.head}
-              </h1>
               <ul className="benefits-list">
                 {services[param].benefits.data.map((item, index) => (
                   <li

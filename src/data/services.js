@@ -543,39 +543,39 @@ export const services = {
         getStarted: "Protect your organization with ArmourIQ’s SOC & Global Threat Management Services. Contact us today to schedule a consultation and discover how we can help you stay ahead of cyber threats and ensure robust security."
     },
 
-    staff: {
-        topic: "Staff Augmentation",
-        image: "/Staff.jpg",
-        heading1: "Flexible Workforce Augmentation",
-        heading2: "Empowering Your Projects with Skilled Professionals",
-        content: "ArmourIQ offers specialized Staff Augmentation services to bolster your capabilities with skilled professionals who integrate seamlessly into your team. Whether you need temporary support or long-term expertise, our augmentation services provide flexible security needs.",
-        approaches: {
-            head: "How We Can Help You",
-            data: [
-                {
-                    approachHead: "Flexible Resource Allocation",
-                    content: "Access cybersecurity professionals on-demand to fill temporary gaps or augment your existing team during peak periods."
-                },
-                {
-                    approachHead: "Specialized Expertise",
-                    content: "Benefit from our pool of experienced professionals skilled in various cybersecurity domains, including risk management, incident response, and compliance."
-                },
-                {
-                    approachHead: "Seamless Integration",
-                    content: "Ensure smooth integration of augmented staff into your organizational structure and processes, enhancing collaboration and productivity."
-                },
-                {
-                    approachHead: "Scalability",
-                    content: "Scale your cybersecurity operations effectively by adjusting the level of augmentation as your business needs evolve."
-                },
-                {
-                    approachHead: "Cost Efficiency",
-                    content: "Optimize costs with flexible staffing solutions that eliminate the overhead associated with permanent hires while maintaining high-quality expertise."
-                }
-            ]
-        },
-        getStarted: "Enhance your cybersecurity capabilities with ArmourIQ’s Staff Augmentation services. Contact us today to discuss your staffing needs and leverage our expertise effectively."
-    },
+    // staff: {
+    //     topic: "Staff Augmentation",
+    //     image: "/Staff.jpg",
+    //     heading1: "Flexible Workforce Augmentation",
+    //     heading2: "Empowering Your Projects with Skilled Professionals",
+    //     content: "ArmourIQ offers specialized Staff Augmentation services to bolster your capabilities with skilled professionals who integrate seamlessly into your team. Whether you need temporary support or long-term expertise, our augmentation services provide flexible security needs.",
+    //     approaches: {
+    //         head: "How We Can Help You",
+    //         data: [
+    //             {
+    //                 approachHead: "Flexible Resource Allocation",
+    //                 content: "Access cybersecurity professionals on-demand to fill temporary gaps or augment your existing team during peak periods."
+    //             },
+    //             {
+    //                 approachHead: "Specialized Expertise",
+    //                 content: "Benefit from our pool of experienced professionals skilled in various cybersecurity domains, including risk management, incident response, and compliance."
+    //             },
+    //             {
+    //                 approachHead: "Seamless Integration",
+    //                 content: "Ensure smooth integration of augmented staff into your organizational structure and processes, enhancing collaboration and productivity."
+    //             },
+    //             {
+    //                 approachHead: "Scalability",
+    //                 content: "Scale your cybersecurity operations effectively by adjusting the level of augmentation as your business needs evolve."
+    //             },
+    //             {
+    //                 approachHead: "Cost Efficiency",
+    //                 content: "Optimize costs with flexible staffing solutions that eliminate the overhead associated with permanent hires while maintaining high-quality expertise."
+    //             }
+    //         ]
+    //     },
+    //     getStarted: "Enhance your cybersecurity capabilities with ArmourIQ’s Staff Augmentation services. Contact us today to discuss your staffing needs and leverage our expertise effectively."
+    // },
 
     virtual: {
         topic: "Virtual CISO as a Service",

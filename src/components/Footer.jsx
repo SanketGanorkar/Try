@@ -31,17 +31,17 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div className="border-t-[1px] bg-black pb-2 w-full">
-      <div className="flex flex-col md:flex-row lg:justify-center 2xl:gap-16">
+      <div className="flex flex-col md:flex-row lg:justify-center 2xl:gap-16 mt-[70px]">
         {/* First column*/}
         <div className="flex flex-col mb-4 md:mb-0">
           <div className="ml-4">
             <img
               src={logo}
               alt="Company Logo"
-              className="h-[100px] ml-0 mr-auto sm:ml-0 cursor-pointer"
+              className="h-[120px] ml-0 mr-auto sm:ml-0 cursor-pointer"
             />
           </div>
-          <div className="flex flex-col mt-4">
+          <div className="flex flex-col -mt-1">
             <div className="flex flex-row mb-4">
               <CiLocationOn color="#FFFFFF" className="ml-3" size={30} />
               <div className="flex flex-col">

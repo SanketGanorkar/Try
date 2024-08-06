@@ -43,7 +43,7 @@ const Intro = () => {
             DEMOCRATIZING CYBERSECURITY
           </h2>
           <h2 className="text-white font-bold text-3xl max-sm:text-xl">
-            ASSESS → DEFEND → SECURE
+            ASSESS → SECURE → DEFEND
           </h2>
           <p className="text-white mt-8">
             Tailored services are designed to meet the specific

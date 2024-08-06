@@ -23,16 +23,16 @@
 }
 
 .intro {
-  @apply flex flex-row mt-6 max-lg:flex-col max-sm:mt-0;
+  @apply flex flex-row mt-6 max-lg:flex-col max-sm:mt-0 gap-[70px];
 }
 .intro-left {
-  @apply flex flex-col max-lg:px-4 md:ml-5 lg:ml-[120px] max-lg:mt-4 pr-2;
+  @apply flex flex-col max-lg:px-4 md:ml-5 lg:ml-[60px] max-lg:mt-4 pr-2 mt-4 max-sm:ml-2;
 }
 .heading {
   @apply text-black font-bold text-3xl;
 }
 .intro-content {
-  @apply text-black mt-5;
+  @apply text-black mt-5 text-balance;
 }
 
 .content {
@@ -53,34 +53,33 @@
 }
 .approach-list {
   @apply md:ml-8 mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3;
-  /* @apply md:ml-8 mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 ; */
-  /* @apply md:ml-8 mt-5 flex flex-wrap; */
   gap: 5px;
 }
-.list-content {
-  @apply bg-[#F6F5F5] text-black p-4 rounded-lg shadow-lg min-h-[300px] min-w-[300px] flex flex-col justify-center items-center text-center hover:bg-[#004bae] hover:border-white hover:border-[1px] 2xl:w-[550px];
-  /* @apply bg-[#F6F5F5] text-black p-4 rounded-lg shadow-lg flex flex-col justify-center items-center text-center hover:bg-[#004bae] hover:border-white hover:border-[1px] h-auto md:w-[380px] w-full 2xl:w-[420px] 2xl:h-[380px];
+.list-disc-custom {
+  list-style-type: disc;
+}
 
-  aspect-ratio: 1 / 1 ; */
+.list-content {
+  @apply bg-[#F6F5F5] text-black p-4 rounded-lg shadow-lg flex flex-col justify-center hover:bg-[#004bae] hover:border-white hover:border-[1px];
 }
 .benefits-container {
-  @apply bg-white p-4 border rounded-lg shadow-sm md:mx-8 mt-5; /* Adjust padding */
-  border-color: #6b7280; /* Tailwind's gray-500 */
+  @apply bg-white p-6 border rounded-lg shadow-sm md:mx-8 mt-5; 
+  border-color: #6b7280; 
 }
 
 .key-benefit {
-  @apply text-black font-bold text-3xl md:ml-4; /* Adjust margin */
+  @apply text-black font-bold text-3xl md:ml-9; 
 }
 
 .benefits-list {
-  @apply mt-6 md:ml-4 ml-4 list-none text-black; /* Adjust margin */
+  @apply mt-6 md:ml-4 ml-4 text-black; 
 }
 
 .benefits-item {
-  @apply text-base sm:text-lg mb-4 text-black flex items-start relative leading-relaxed; /* Adjust line height */
-  border-bottom: 1px solid #6b7280; /* Tailwind's gray-500 */
-  padding-bottom: 0.5rem; /* Adjust padding */
-  padding-top: 0.5rem; /* Adjust padding */
+  @apply text-base sm:text-lg mb-4 max-sm:ml-2 text-black max-sm:mt-3 flex items-start;
+  border-bottom: 1px solid #6b7280; 
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem; 
 }
 
 .benefits-item:last-child {
