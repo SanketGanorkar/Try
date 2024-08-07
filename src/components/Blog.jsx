@@ -1,8 +1,7 @@
 import React from "react";
-import blog1 from "/assets/Blog1.jpg";
-import blog2 from "/assets/Blog2.jpg";
-import blog3 from "/assets/Blog3.jpg";
-import blog4 from "/assets/Blog4.jpg";
+import blog1 from "/assets/blog1.png";
+import blog2 from "/assets/blog2.png";
+import blog3 from "/assets/blog3.png";
 import { Link } from "react-router-dom";
 import { FaRegCommentAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
@@ -12,7 +11,7 @@ const Blog = () => {
   const arr = [
     {
       id: 1,
-      img: blog2,
+      img: blog1,
       title:
         "Defending Against Phishing: Strategies to Protect Your Organization",
       date: "July 13 2022",
@@ -32,22 +31,12 @@ const Blog = () => {
     },
     {
       id: 3,
-      img: blog2,
+      img: blog3,
       title:
         "Unveiling the Importance of Technical Risk Assessment in Cybersecurity",
       date: "September 10 2022",
       comments: "2",
       path: "/blog3",
-      desc: "Blockchain technology is set to revolutionize various industries. Learn about its future prospects and potential.",
-    },
-    {
-      id: 4,
-      img: blog2,
-      title:
-        "Unveiling the Importance of Technical Risk Assessment in Cybersecurity",
-      date: "September 10 2022",
-      comments: "2",
-      path: "/blog4",
       desc: "Blockchain technology is set to revolutionize various industries. Learn about its future prospects and potential.",
     },
   ];
