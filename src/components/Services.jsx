@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-// import newbg from "../../public/assets/newbg.jpeg"
+import logo_cloud from "../../public/assets/logo_cloud.png"
+// import logo_mobile from "../../public/assets/logo_mobile.png"
+// import logo_application from "../../public/assets/logo_application.png"
+// import logo_ciso from "../../public/assets/logo_ciso.png"
+// import logo_soc from "../../public/assets/logo_soc.png"
+// import logo_network from "../../public/assets/logo_network.png"
+// import logo_security from "../../public/assets/logo_security.png"
+// import logo_maturity from "../../public/assets/logo_maturity.png"
+// import logo_audit from "../../public/assets/logo_audit.png"
 import "./Services.css";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { FaRegArrowAltCircleRight , FaMobileAlt  } from "react-icons/fa";
+import { TbCloudComputing } from "react-icons/tb";
+import { MdSettingsApplications } from "react-icons/md";
+import { AiFillSecurityScan } from "react-icons/ai";
 
 const Services = () => {
   const services = [
@@ -15,7 +26,7 @@ const Services = () => {
         "Compliance Assurance",
         "Cost Efficiency",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 2,
@@ -26,7 +37,7 @@ const Services = () => {
         "Protect User Data",
         "Compliance Assurance",
       ],
-      footer: "...read more",
+      logo : <FaMobileAlt />,
     },
     {
       id: 3,
@@ -37,7 +48,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      footer: "...read more",
+      logo : <MdSettingsApplications />,
     },
     {
       id: 4,
@@ -48,7 +59,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 5,
@@ -59,7 +70,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 6,
@@ -70,7 +81,7 @@ const Services = () => {
         "Expert Incident Response",
         "Strategic Security Guidance",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 7,
@@ -81,7 +92,7 @@ const Services = () => {
         "Strategic Guidance",
         "Compliance Assurance",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 8,
@@ -92,7 +103,7 @@ const Services = () => {
         "Efficient Technology Selection",
         "On-Demand Services",
       ],
-      footer: "...read more",
+      logo : <TbCloudComputing />,
     },
     {
       id: 9,
@@ -102,7 +113,7 @@ const Services = () => {
         "Security Awareness Training",
         "Simulated Social Engineering Test",
       ],
-      footer: "...read more",
+      logo : <AiFillSecurityScan />,
     },
   ];
   const faqs = [
@@ -178,6 +189,7 @@ const Services = () => {
               <Link to={item.path} className="hidden lg:block h-full m-1">
                 <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[280px] h-[280px] cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
                   <div className="w-full h-full flex flex-col items-center justify-center">
+                  {/* <img src={item.logo} className="" /> */}
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                     <ul className="list-disc text-left pl-5 mb-2">
                       {item.highlights.slice(0, 3).map((highlight, index) => (
@@ -194,6 +206,7 @@ const Services = () => {
               {/* For Mobile */}
               <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[250px] h-[250px] lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
                 <div className="w-full h-full flex flex-col items-center justify-center">
+                  <img src={item.logo} className="" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="list-disc text-left pl-5 mb-2">
                     {item.highlights.slice(0, 3).map((highlight, index) => (
