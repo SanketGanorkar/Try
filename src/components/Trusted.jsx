@@ -1,10 +1,11 @@
-import Cashmap from "/assets/Cashmap.png";
-import FoodIn from "/assets/FoodIn.png";
-import Moneytalk from "/assets/MoneyTalk.png"
-import Naviti from "/assets/Naviti.png";
-import Nudgebee from "/assets/Nudgebee.png";
-import Suzie from "/assets/Suzie.png";
-import Aashwat from "/assets/aashwat.png"
+const Cashmap = "./assets/Cashmap.png";
+const FoodIn = "./assets/FoodIn.png";
+const Moneytalk = "./assets/M.png";
+const Naviti = "./assets/Naviti.png";
+const Nudgebee = "./assets/Nudgebee.png";
+const Suzie = "./assets/Suzie.png";
+const Aashwat = "./assets/aashwat.png";
+
 import Marquee from "react-fast-marquee";
 
 const Trusted = () => {
