@@ -85,14 +85,14 @@ const Contact = () => {
           <div className="flex flex-row">
             <MdOutlineEmail color="#004bae" className="ml-3 mt-5" size={28} />
             <div className="flex flex-col">
-              <h5 className="text-white ml-3 mt-5">hello@armouriq.com</h5>
+              <h5 className="text-white ml-3 mt-5">hello@armourIQ.com</h5>
             </div>
           </div>
         </div>
         <div className="flex flex-col text-white lg:max-xl:w-1/3 xl:ml-[5rem] max-md:px-4 sm:max-lg:w-[40rem] h-fit lg:w-[35rem]">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Name"
             className="w-full p-3 h-[40px] border-[#004bae] border-[1px] bg-[#000000] my-3"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -100,14 +100,14 @@ const Contact = () => {
           <div className="flex flex-row w-full gap-2">
             <input
               type="text"
-              placeholder="Your Phone Number"
+              placeholder="Phone Number"
               className="p-3 w-[60%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
             <input
               type="email"
-              placeholder="Your Mail"
+              placeholder="Mail"
               className="text-white h-[40px] w-[80%] p-3 border-[#004bae] border-[1px] bg-[#000000]"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -122,7 +122,7 @@ const Contact = () => {
           />
           <textarea
             type="text"
-            placeholder="Your Message"
+            placeholder="Message"
             className="w-full pl-2 pt-2 h-[100px] border-[#004bae] border-[1px] bg-[#000000] my-3"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -131,7 +131,7 @@ const Contact = () => {
             className="bg-[#004bae] p-3 font-bold w-full"
             onClick={handleSubmit}
           >
-            SEND MAIL
+            SEND
           </button>
         </div>
       </div>

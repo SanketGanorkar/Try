@@ -23,24 +23,24 @@ const ContactD = () => {
         <div className="flex flex-col text-black xl:ml-[95px] md:w-[480px]">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Name"
             className=" p-3 h-[40px] border-[#004bae] border-[1px] bg-[#F6F5F5] my-3"
           />
           <div className="flex flex-row w-full gap-2">
             <input
               type="number"
-              placeholder="Your Phone Number"
+              placeholder="Phone Number"
               className="p-3 w-[50%] h-[40px] text-black border-[#004bae] border-[1px] bg-[#F6F5F5]"
             />
             <input
               type="email"
-              placeholder="Your Mail"
+              placeholder="Mail"
               className="text-black h-[40px] w-[80%] p-3 border-[#004bae] border-[1px] bg-[#F6F5F5]"
             />
           </div>
           <textarea
             type="text"
-            placeholder="Your Message"
+            placeholder="Message"
             className=" w-full pl-2 pt-2 h-[100px] border-[#004bae] border-[1px] bg-[#F6F5F5] my-3"
           />
           <button className="bg-[#004bae] p-3 font-bold w-full text-white">SEND</button>

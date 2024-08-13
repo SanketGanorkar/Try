@@ -161,7 +161,7 @@ const Services = () => {
         <div className=" bg-black opacity-15 h-[240px]"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-4xl text-black mt-[50px] mb-9 max-sm:mt-[50px]">
-            <span className="ml-[8px] text-6xl text-black font-bold">
+            <span className="ml-[8px] text-6xl text-black font-semibold">
               Our Services
             </span>
           </div>
@@ -178,8 +178,8 @@ const Services = () => {
         threat detection and response for real-time protection, and robust data
         protection and encryption.
       </div>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:w-[75%] gap-2 p-10 lg:mt-2">
+      <div className="flex justify-center mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:w-[75%] gap-4 p-4 lg:mt-2">
           {services.map((item) => (
             <div
               key={item.id}
@@ -206,7 +206,7 @@ const Services = () => {
               {/* For Mobile */}
               <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[250px] h-[250px] lg:hidden hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
                 <div className="w-full h-full flex flex-col items-center justify-center">
-                  <img src={item.logo} className="" />
+                  {/* <img src={item.logo} className="" /> */}
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="list-disc text-left pl-5 mb-2">
                     {item.highlights.slice(0, 3).map((highlight, index) => (

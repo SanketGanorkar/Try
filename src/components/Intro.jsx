@@ -39,14 +39,14 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%] max-sm:flex-col">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-white font-bold text-nowrap max-sm:text-[11px]">
+          <h2 className="text-white font-bold text-nowrap max-sm:text-[11px] md:mb-3 max-sm:mb-3">
             DEMOCRATIZING CYBERSECURITY
           </h2>
-          <h2 className="text-white font-bold text-3xl max-sm:text-xl">
+          <h2 className="text-white font-bold text-3xl max-sm:text-[15px]">
             ASSESS → SECURE → DEFEND
           </h2>
           <p className="text-white mt-8">
-            Tailored services are designed to meet the specific
+            Tailored services are designed to meet the specific 
             <span className="hidden sm:inline"></span>
             needs of diverse clients, from small startups to large
             <span className="hidden sm:inline"></span>
@@ -72,7 +72,7 @@ const Intro = () => {
                 <h2 className="text-white text-[15px] mt-1 sm:mt-0">
                   +1 469 296 9672
                 </h2>
-                <h2 className="text-white text-[15px]">+91 9302864102</h2>
+                <h2 className="text-white text-[15px]">+91 6306867803</h2>
               </div>
             </div>
           </div>

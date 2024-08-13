@@ -1,5 +1,6 @@
 import { MdOutlineEmail } from "react-icons/md";
 import newbg from "../../public/assets/newbg.jpeg"
+import about from "../../public/assets/about_intro.jpeg"
 import {
   FaBullseye,
   FaEye,
@@ -11,7 +12,7 @@ import { IoPeopleSharp, IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTrophy } from "react-icons/fa";
 import cybersec_tem from "../../public/assets/cybersec_team.jpg";
 import { GrIntegration, GrShieldSecurity } from "react-icons/gr";
-import about from "../../public/assets/about.jpg";
+// import about from "../../public/assets/about.jpg";
 import cybersec_engineer from "/assets/cybersec_engineer.jpg";
 import { BsBullseye } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
@@ -127,12 +128,12 @@ const AboutUs = () => {
             {/* <img src={newbg} className="max-sm:h-[200px] h-[300px] w-full" /> */}
             <div className="bg-black max-sm:h-[200px] h-[300px] opacity-15"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-4xl md:text-6xl text-black font-bold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+              <div className="text-4xl md:text-6xl text-black font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
                 About Us
               </div>
             </div>
           </div>
-          <img src={about} className="ml-4 md:ml-[60px] mt-11 w-[85%] rounded-2xl" />
+          <img src={about} className="ml-4 md:ml-[90px] mt-11 w-[85%] rounded-2xl" />
           <h1 className="text-black font-semibold text-3xl ml-4 md:ml-[65px] mt-[70px] max-sm:ml-[120px]">
             About Us
           </h1>
@@ -147,10 +148,10 @@ const AboutUs = () => {
               them towards their zenith.
             </p>
           </div>
-          <h1 className="text-black font-semibold text-3xl md:text-3xl ml-4 md:ml-[65px] mt-[55px] mb-3 max-sm:ml-[90px]">
+          {/* <h1 className="text-black font-semibold text-3xl md:text-3xl ml-4 md:ml-[65px] mt-[55px] mb-3 max-sm:ml-[90px]">
             Why Choose Us
-          </h1>
-          <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-[47px] lg:mt-0 ">
+          </h1> */}
+          <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-[47px] lg:mt-10 ">
             <div className="w-full lg:w-1/2 px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[400px] ml-10 md:ml-0 max-sm:gap-y-2 max-sm:ml-5">
                 {visionMissionValues.map((item) => (

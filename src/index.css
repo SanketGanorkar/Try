@@ -40,7 +40,7 @@
 }
 
 .topic {
-  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black lg:text-[55px] font-bold mt-10 text-[25px] text-nowrap max-sm:mt-12;
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black lg:text-[55px] font-semibold mt-10 text-[25px] text-nowrap max-sm:mt-12;
 }
 .topic-bg {
   @apply w-screen lg:h-[320px] opacity-85 bg-white max-lg:h-[200px];
@@ -91,7 +91,7 @@
 }
 
 .extra-content {
-  @apply text-black font-bold text-3xl md:ml-8;
+  @apply text-black font-semibold text-[20px] md:ml-8;
 }
 .extra-con-para {
   @apply text-black mt-4 md:ml-8 md:w-[1180px];
