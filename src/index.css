@@ -96,3 +96,10 @@
 .extra-con-para {
   @apply text-black mt-4 md:ml-8 md:w-[1180px];
 }
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

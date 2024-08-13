@@ -99,9 +99,9 @@ const Contact = () => {
           />
           <div className="flex flex-row w-full gap-2">
             <input
-              type="text"
+              type="number"
               placeholder="Phone Number"
-              className="p-3 w-[60%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
+              className="p-3 outline-none w-[60%] h-[40px] text-white border-[#004bae] border-[1px] bg-[#000000]"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />

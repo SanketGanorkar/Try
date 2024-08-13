@@ -27,7 +27,7 @@ const Blog = () => {
       date: "August 21 2022",
       comments: "5",
       path: "/blog2",
-      desc: "AI is evolving rapidly with new trends emerging every year. Stay updated with the latest developments in AI technology.",
+      desc: "AI is evolving rapidly with new trends emerging every year. Stay updated with the latest developments in AI.",
     },
     {
       id: 3,
@@ -83,7 +83,7 @@ const Blog = () => {
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={[]}
-          itemClass="px-2 mx-auto max-sm:ml-3"
+          itemClass="md:px-5 mx-auto max-sm:ml-2 max-sm:px-1"
         >
           {arr.map((item) => (
             <div
