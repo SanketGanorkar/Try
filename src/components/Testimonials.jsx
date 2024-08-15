@@ -4,21 +4,21 @@ const Testimonials = () => {
   const arr = [
     {
       id: 1,
-      desc: "Dedicated to improving user experience, specializing in modern UI/UX design, and creating intuitive interfaces.",
+      desc: "The team was incredibly professional and knowledgeable. Their expertise in handling our security needs has been invaluable.",
       img: user,
       name: "Henry Ford",
       desig: "Sales Executive",
     },
     {
       id: 2,
-      desc: "Expert in full-stack development, with a passion for building scalable applications and optimizing performance.",
+      desc: "Oversees project management and ensures alignment with strategic goals, fostering a collaborative environment.",
       img: user,
       name: "Edward Kent",
       desig: "Senior Developer",
     },
     {
       id: 3,
-      desc: "Oversees project management and ensures alignment with strategic goals, fostering a collaborative environment.",
+      desc: "The cybersecurity solutions provided by this company have drastically improved our security posture.",
       img: user,
       name: "Jane Maxwell",
       desig: "Assitant Director",

@@ -51,7 +51,7 @@ const Contact = () => {
     <div className="flex flex-col bg-[#262626] justify-center">
       <div className="relative">
         <img src={img} className="topic-bg" alt="Service Image" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white lg:text-[55px] font-bold mt-8 text-[25px] text-nowrap max-sm:mt-12">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white lg:text-[55px] font-semibold mt-11 text-[36px] text-nowrap max-sm:mt-12">
           Contact Us
         </div>
       </div>

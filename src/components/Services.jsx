@@ -1,16 +1,8 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import logo_cloud from "../../public/assets/logo_cloud.png"
-// import logo_mobile from "../../public/assets/logo_mobile.png"
-// import logo_application from "../../public/assets/logo_application.png"
-// import logo_ciso from "../../public/assets/logo_ciso.png"
-// import logo_soc from "../../public/assets/logo_soc.png"
-// import logo_network from "../../public/assets/logo_network.png"
-// import logo_security from "../../public/assets/logo_security.png"
-// import logo_maturity from "../../public/assets/logo_maturity.png"
-// import logo_audit from "../../public/assets/logo_audit.png"
 import "./Services.css";
 import { FaRegArrowAltCircleRight , FaMobileAlt  } from "react-icons/fa";
+import img from "/assets/ServiceBg.jpg";
 import { TbCloudComputing } from "react-icons/tb";
 import { MdSettingsApplications } from "react-icons/md";
 import { AiFillSecurityScan } from "react-icons/ai";
@@ -118,55 +110,63 @@ const Services = () => {
   ];
   const faqs = [
     {
-      id : 1,
-      question: "What Is The Development Time For A New Website?",
+      id: 1,
+      question: "What types of cybersecurity solutions do you offer?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "We offer a comprehensive range of cybersecurity solutions, including network security, endpoint protection, cloud security, identity and access management, and threat intelligence.",
     },
     {
-      id : 2,
-      question: "What Is The Development Time For A New Website?",
+      id: 2,
+      question: "How do you ensure the security of sensitive data?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "We implement advanced encryption, multi-factor authentication, and continuous monitoring to protect sensitive data from unauthorized access and breaches.",
     },
     {
-      id : 3,
-      question: "What Is The Development Time For A New Website?",
+      id: 3,
+      question: "What industries do you serve with your cybersecurity services?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "We serve various industries including finance, healthcare, retail, government, and education, providing tailored cybersecurity solutions to meet industry-specific challenges.",
     },
     {
-      id : 4,
-      question: "What Is The Development Time For A New Website?",
+      id: 4,
+      question: "Do you offer 24/7 monitoring and support?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "Yes, we provide round-the-clock monitoring and support to ensure your systems are always protected and any potential threats are addressed immediately.",
     },
     {
-      id : 5,
-      question: "What Is The Development Time For A New Website?",
+      id: 5,
+      question: "How can your services help with regulatory compliance?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "Our cybersecurity solutions help organizations comply with industry regulations such as GDPR, HIPAA, and PCI-DSS by providing robust security controls and regular audits.",
     },
     {
-      id : 6,
-      question: "What Is The Development Time For A New Website?",
+      id: 6,
+      question: "Can you help with incident response and recovery?",
       answer:
-        "The normal developing period of a new website usually varies from 3 to up to 12 weeks, subject to project complexity and size.",
+        "Absolutely. Our team is equipped to handle incident response, helping you quickly contain, mitigate, and recover from cybersecurity incidents.",
     },
   ];
+  
 
   return (
     <div id="services" className="bg-white min-h-screen mt-[80px]">
       <div className="relative">
-        <div className=" bg-black opacity-15 h-[240px]"></div>
+        {/* <img src={img} className="max-sm:h-[200px] h-[270px] w-full" /> */}
+        <div className=" bg-[#004AAD] opacity-85 h-[240px]"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-4xl text-black mt-[50px] mb-9 max-sm:mt-[50px]">
-            <span className="ml-[8px] text-6xl text-black font-semibold">
+            <span className="ml-[8px] text-6xl text-white font-semibold">
               Our Services
             </span>
           </div>
         </div>
       </div>
+      {/* <div className="relative">
+        <img src={img} className="topic-bg" alt="Service Image" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white lg:text-[55px] font-bold mt-2 text-[25px] text-nowrap max-sm:mt-12">
+          Contact Us
+        </div>
+      </div> */}
       <h1 className="text-black font-bold text-3xl ml-[60px] mt-4 max-sm:ml-6 text-balance">
         Enhancing Organisational Cybersecurity Through Comprehensive Services
       </h1>
@@ -228,30 +228,31 @@ const Services = () => {
 
       {/* transition-all duration-300 */}
       <div className="p-10 pt-0 lg:mt-2 flex flex-col justify-center items-center">
-        <h1 className="font-bold text-4xl max-sm:text-2xl">
-          Frequently Asked Questions
-        </h1>
-        <h3 className="font-normal text-xl text-gray-500 mt-2">
-          Your Queries, Our Answers
-        </h3>
-        <div className="flex flex-col gap-y-5 ">
-          {faqs.map((faq, index) => (
-            <div key={index}>
-              <details className="group cursor-pointer">
-                <summary className="font-semibold text-[20px] text-black max-sm:w-[380px]">
-                  {faq.question}
-                </summary>
-                <p className="font-semibold text-[15px] text-black ml-3 w-[530px] max-sm:w-[350px]">
-                  {faq.answer}
-                </p>
-              </details>
-              {index < faqs.length - 1 && (
-                <hr className="border-t-1 border-gray-300 mt-3" />
-              )}
-            </div>
-          ))}
-        </div>
+  <h1 className="font-bold text-4xl max-sm:text-2xl">
+    Frequently Asked Questions
+  </h1>
+  <h3 className="font-normal text-xl text-gray-500 mt-2">
+    Your Queries, Our Answers
+  </h3>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-5 mt-5">
+    {faqs.map((faq, index) => (
+      <div key={index}>
+        <details className="group cursor-pointer" name="accordian">
+          <summary className="font-semibold text-[20px] text-black">
+            {faq.question}
+          </summary>
+          <p className="font-semibold text-[15px] text-black ml-3">
+            {faq.answer}
+          </p>
+        </details>
+        {index < faqs.length - 1 && (
+          <hr className="border-t-1 border-gray-300 mt-3" />
+        )}
       </div>
+    ))}
+  </div>
+</div>
+
       <Footer />
     </div>
   );

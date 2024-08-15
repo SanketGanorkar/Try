@@ -34,31 +34,31 @@ const Trusted = () => {
           <Marquee autoFill pauseOnClick>
             <img
               src={Cashmap}
-              className="w-29 h-20 m-1 border-[2px] transition-all duration-300 hover:scale-110 cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 border-[2px] transition-all duration-300 hover:scale-110 cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={FoodIn}
-              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={Moneytalk}
-              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={Naviti}
-              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={Nudgebee}
-              className="w-29 h-20 m-1 htransition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 htransition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={Suzie}
-              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
             <img
               src={Aashwat}
-              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-5 max-sm:mx-3"
+              className="w-29 h-20 m-1 transition-all duration-300 hover:scale-110 border-[2px] cursor-pointer md:mx-9 max-sm:mx-3"
             />
           </Marquee>
         </div>

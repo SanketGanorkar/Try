@@ -1,6 +1,6 @@
 import { MdOutlineEmail } from "react-icons/md";
-import newbg from "../../public/assets/newbg.jpeg"
-import about from "../../public/assets/about_intro.jpeg"
+import newbg from "../../public/assets/newbg.jpeg";
+import about from "../../public/assets/about_intro.jpeg";
 import {
   FaBullseye,
   FaEye,
@@ -13,6 +13,7 @@ import { FaTrophy } from "react-icons/fa";
 import cybersec_tem from "../../public/assets/cybersec_team.jpg";
 import { GrIntegration, GrShieldSecurity } from "react-icons/gr";
 // import about from "../../public/assets/about.jpg";
+import img from "/assets/ServiceBg.jpg";
 import cybersec_engineer from "/assets/cybersec_engineer.jpg";
 import { BsBullseye } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
@@ -125,15 +126,19 @@ const AboutUs = () => {
       <div className="flex flex-col bg-white mt-3">
         <div>
           <div className="relative">
-            {/* <img src={newbg} className="max-sm:h-[200px] h-[300px] w-full" /> */}
-            <div className="bg-black max-sm:h-[200px] h-[300px] opacity-15"></div>
+            {/* <div className="bg-black max-sm:h-[200px] h-[300px] opacity-15"></div> */}
+            {/* <img src={img} className="max-sm:h-[200px] h-[300px] w-full" /> */}
+            <div className=" bg-[#004AAD] opacity-85 h-[310px]"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-4xl md:text-6xl text-black font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+              <div className="text-4xl md:text-[60px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
                 About Us
               </div>
             </div>
           </div>
-          <img src={about} className="ml-4 md:ml-[90px] mt-11 w-[85%] rounded-2xl" />
+          <img
+            src={about}
+            className="ml-4 md:ml-[90px] mt-11 w-[85%] rounded-2xl"
+          />
           <h1 className="text-black font-semibold text-3xl ml-4 md:ml-[65px] mt-[70px] max-sm:ml-[120px]">
             About Us
           </h1>
@@ -250,28 +255,30 @@ const AboutUs = () => {
               </h2>
               <div>
                 <h4 className="text-black font-bold text-3xl w-[90%] lg:w-[500px] ml-4 md:ml-[65px] mt-3">
-                  We Are The Best To Help You Secure Your Company's Security
+                  Your Trusted Partner in Cybersecurity
                 </h4>
                 <p className="text-black font-normal text-sm md:text-lg lg:text-xl w-[90%] lg:w-[500px] ml-4 md:ml-[65px] mt-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  With our cutting-edge solutions and expert team, we ensure
+                  that your company is safeguarded against the latest cyber
+                  threats. Our commitment to excellence and customer
+                  satisfaction sets us apart as leaders in the cybersecurity
+                  industry.
                 </p>
                 <div className="flex flex-col md:flex-row">
                   <img
                     src={cybersec_engineer}
-                    className="h-[200px] w-[90%] md:w-[280px] ml-4 md:ml-[65px] rounded-lg mt-2 "
+                    className="h-[200px] w-[90%] md:w-[280px] ml-4 md:ml-[65px] rounded-lg mt-2"
                   />
                   <div className="flex flex-col">
                     <div className="flex flex-row">
                       <FaUser size={30} className="ml-3 mt-3" />
                       <div>
                         <h1 className="text-black font-bold mt-3 ml-3 text-xl">
-                          Full Services
+                          Comprehensive Solutions
                         </h1>
                         <p className="ml-3 w-[150px]">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit,
+                          Full-spectrum protection, from threat detection to
+                          response.
                         </p>
                       </div>
                     </div>
@@ -279,11 +286,10 @@ const AboutUs = () => {
                       <FaUser size={30} className="ml-3 mt-3" />
                       <div>
                         <h1 className="text-black font-bold mt-3 ml-3 text-xl">
-                          Full Services
+                          Experienced Team
                         </h1>
                         <p className="ml-3 w-[150px]">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit,
+                          Experienced experts safeguarding your business.
                         </p>
                       </div>
                     </div>
@@ -296,6 +302,7 @@ const AboutUs = () => {
               className="h-[500px] w-[90%] md:w-[400px] ml-4 lg:ml-[150px] rounded-lg mt-4 md:mt-8"
             />
           </div>
+
           <div className="text-black mx-4 md:ml-[65px] text-2xl md:text-3xl font-semibold mt-[65px]">
             Discover exceptional experiences through testimonials from our
             satisfied customers
@@ -340,9 +347,13 @@ const AboutUs = () => {
                 Contact Us to
               </h3>
               <ul className="list-disc list-inside mt-2">
-                <li  className="whitespace-nowrap">Discover tailored security solutions</li>
-                <li  className="whitespace-nowrap">Get a free security assessment</li>
-                <li  className="whitespace-nowrap">Receive prompt support</li>
+                <li className="whitespace-nowrap">
+                  Discover tailored security solutions
+                </li>
+                <li className="whitespace-nowrap">
+                  Get a free security assessment
+                </li>
+                <li className="whitespace-nowrap">Receive prompt support</li>
               </ul>
               <div className="flex flex-col max-sm:mt-5 mt-4">
                 <div className="flex flex-row items-center mb-0">
