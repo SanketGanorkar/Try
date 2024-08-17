@@ -34,10 +34,8 @@ function App() {
           <Route exact path="/blog3" element={<Blog3 />} />
           <Route exact path="/blog4" element={<Blog4 />} />
         </Routes>
-
       </BrowserRouter>
     </>
   );
 }
-
 export default App;

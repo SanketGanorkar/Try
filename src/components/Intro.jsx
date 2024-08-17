@@ -46,7 +46,7 @@ const Intro = () => {
             ASSESS → SECURE → DEFEND
           </h2>
           <p className="text-white mt-8">
-            Tailored services are designed to meet the specific 
+            Tailored services designed to meet the specific
             <span className="hidden sm:inline"></span>
             needs of diverse clients, from small startups to large
             <span className="hidden sm:inline"></span>
@@ -69,10 +69,9 @@ const Intro = () => {
             <div className="flex flex-col mt-4 sm:flex-row sm:ml-8 sm:mt-0 sm:gap-4">
               <h2 className="text-white font-bold pt-3 text-[15px]">Call us</h2>
               <div className="flex flex-col">
-                <h2 className="text-white text-[15px] mt-1 sm:mt-0">
+                <h2 className="text-white text-[15px] mt-1 sm:mt-3">
                   +1 469 296 9672
                 </h2>
-                <h2 className="text-white text-[15px]">+91 6306867803</h2>
               </div>
             </div>
           </div>
@@ -117,7 +116,7 @@ const Intro = () => {
 
       {/* Grid Section */}
       <div className="p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-sm:gap-5 md:gap-[60px] place-items-center">
           {arr.map((item) => (
             <div
               key={item.id}
@@ -176,7 +175,6 @@ const Intro = () => {
               />
               <h4 className="text-3xl text-white font-semibold">+</h4>
             </div>
-
             <h4 className="font-semibold text-[30px] ml-3 text-white">Team</h4>
           </div>
           <div className="flex flex-col items-center">
@@ -191,7 +189,6 @@ const Intro = () => {
               />
               <h4 className="text-3xl text-white font-semibold">+</h4>
             </div>
-
             <h4 className="font-semibold text-[30px] ml-3 text-white">
               Assessment
             </h4>

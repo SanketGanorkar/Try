@@ -57,8 +57,8 @@ const Policies = () => {
           <ol className="list-disc text-black font-normal text-base md:text-lg lg:text-xl ml-5 md:ml-10 lg:ml-12 mt-5">
             <li>
               ArmourIQ servers automatically receive your IP address, the time
-              of access, and details regarding the requested page each time
-              you visit the site.
+              of access, and details regarding the requested page each time you
+              visit the site.
             </li>
           </ol>
           <h1 className="text-[20px] font-semibold md:text-[26px] lg:text-[30px] mt-[40px] text-black">
@@ -85,5 +85,4 @@ const Policies = () => {
     </div>
   );
 };
-
 export default Policies;

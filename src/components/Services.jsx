@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "./Services.css";
-import { FaRegArrowAltCircleRight , FaMobileAlt  } from "react-icons/fa";
-import img from "/assets/ServiceBg.jpg";
+import { FaRegArrowAltCircleRight, FaMobileAlt } from "react-icons/fa";
 import { TbCloudComputing } from "react-icons/tb";
 import { MdSettingsApplications } from "react-icons/md";
 import { AiFillSecurityScan } from "react-icons/ai";
@@ -18,7 +17,7 @@ const Services = () => {
         "Compliance Assurance",
         "Cost Efficiency",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 2,
@@ -29,7 +28,7 @@ const Services = () => {
         "Protect User Data",
         "Compliance Assurance",
       ],
-      logo : <FaMobileAlt />,
+      logo: <FaMobileAlt />,
     },
     {
       id: 3,
@@ -40,7 +39,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      logo : <MdSettingsApplications />,
+      logo: <MdSettingsApplications />,
     },
     {
       id: 4,
@@ -51,7 +50,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 5,
@@ -62,7 +61,7 @@ const Services = () => {
         "Compliance Assurance",
         "Risk Mitigation",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 6,
@@ -73,7 +72,7 @@ const Services = () => {
         "Expert Incident Response",
         "Strategic Security Guidance",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 7,
@@ -84,7 +83,7 @@ const Services = () => {
         "Strategic Guidance",
         "Compliance Assurance",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 8,
@@ -95,7 +94,7 @@ const Services = () => {
         "Efficient Technology Selection",
         "On-Demand Services",
       ],
-      logo : <TbCloudComputing />,
+      logo: <TbCloudComputing />,
     },
     {
       id: 9,
@@ -105,7 +104,7 @@ const Services = () => {
         "Security Awareness Training",
         "Simulated Social Engineering Test",
       ],
-      logo : <AiFillSecurityScan />,
+      logo: <AiFillSecurityScan />,
     },
   ];
   const faqs = [
@@ -123,7 +122,8 @@ const Services = () => {
     },
     {
       id: 3,
-      question: "What industries do you serve with your cybersecurity services?",
+      question:
+        "What industries do you serve with your cybersecurity services?",
       answer:
         "We serve various industries including finance, healthcare, retail, government, and education, providing tailored cybersecurity solutions to meet industry-specific challenges.",
     },
@@ -146,37 +146,29 @@ const Services = () => {
         "Absolutely. Our team is equipped to handle incident response, helping you quickly contain, mitigate, and recover from cybersecurity incidents.",
     },
   ];
-  
 
   return (
     <div id="services" className="bg-white min-h-screen mt-[80px]">
       <div className="relative">
-        {/* <img src={img} className="max-sm:h-[200px] h-[270px] w-full" /> */}
-        <div className=" bg-[#004AAD] opacity-85 h-[240px]"></div>
+        <div className=" bg-[#004AAD] opacity-100 h-[182px]"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-4xl text-black mt-[50px] mb-9 max-sm:mt-[50px]">
-            <span className="ml-[8px] text-6xl text-white font-semibold">
+            <span className="ml-[8px] text-[4xl] md:text-[45px] text-white font-semibold">
               Our Services
             </span>
           </div>
         </div>
       </div>
-      {/* <div className="relative">
-        <img src={img} className="topic-bg" alt="Service Image" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white lg:text-[55px] font-bold mt-2 text-[25px] text-nowrap max-sm:mt-12">
-          Contact Us
-        </div>
-      </div> */}
       <h1 className="text-black font-bold text-3xl ml-[60px] mt-4 max-sm:ml-6 text-balance">
         Enhancing Organisational Cybersecurity Through Comprehensive Services
       </h1>
       <div className="text-black text-xl ml-[60px] mt-5 max-sm:ml-7 text-balance">
         Our cybersecurity services provide comprehensive protection for your
-        business against cyber threats, ensuring data security,
-        regulatory compliance, and business continuity. We offer risk assessment
-        and management to identify vulnerabilities, advanced
-        threat detection and response for real-time protection, and robust data
-        protection and encryption.
+        business against cyber threats, ensuring data security, regulatory
+        compliance, and business continuity. We offer risk assessment and
+        management to identify vulnerabilities, advanced threat detection and
+        response for real-time protection, and robust data protection and
+        encryption.
       </div>
       <div className="flex justify-center mt-5">
         <div className="grid grid-cols-1 md:grid-cols-3 md:w-[75%] gap-4 p-4 lg:mt-2">
@@ -189,7 +181,7 @@ const Services = () => {
               <Link to={item.path} className="hidden lg:block h-full m-1">
                 <div className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col justify-between items-center border-[#004bae] border-[1px] w-[280px] h-[280px] cursor-pointer hover:bg-[#004bae] hover:border-white hover:border-[1px] hover:text-white hover:h-[300px] hover:w-[300px] transition-all duration-300">
                   <div className="w-full h-full flex flex-col items-center justify-center">
-                  {/* <img src={item.logo} className="" /> */}
+                    {/* <img src={item.logo} className="" /> */}
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                     <ul className="list-disc text-left pl-5 mb-2">
                       {item.highlights.slice(0, 3).map((highlight, index) => (
@@ -228,31 +220,30 @@ const Services = () => {
 
       {/* transition-all duration-300 */}
       <div className="p-10 pt-0 lg:mt-2 flex flex-col justify-center items-center">
-  <h1 className="font-bold text-4xl max-sm:text-2xl">
-    Frequently Asked Questions
-  </h1>
-  <h3 className="font-normal text-xl text-gray-500 mt-2">
-    Your Queries, Our Answers
-  </h3>
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-5 mt-5">
-    {faqs.map((faq, index) => (
-      <div key={index}>
-        <details className="group cursor-pointer" name="accordian">
-          <summary className="font-semibold text-[20px] text-black">
-            {faq.question}
-          </summary>
-          <p className="font-semibold text-[15px] text-black ml-3">
-            {faq.answer}
-          </p>
-        </details>
-        {index < faqs.length - 1 && (
-          <hr className="border-t-1 border-gray-300 mt-3" />
-        )}
+        <h1 className="font-bold text-4xl max-sm:text-2xl">
+          Frequently Asked Questions
+        </h1>
+        <h3 className="font-normal text-xl text-gray-500 mt-2">
+          Your Queries, Our Answers
+        </h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-5 mt-5">
+          {faqs.map((faq, index) => (
+            <div key={index}>
+              <details className="group cursor-pointer" name="accordian">
+                <summary className="font-semibold text-[15px] text-black">
+                  {faq.question}
+                </summary>
+                <p className="font-semibold text-[15px] text-black ml-3">
+                  {faq.answer}
+                </p>
+              </details>
+              {index < faqs.length && (
+                <hr className="border-t-1 border-gray-300 mt-3" />
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-
       <Footer />
     </div>
   );

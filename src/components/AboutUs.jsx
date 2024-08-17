@@ -1,5 +1,4 @@
 import { MdOutlineEmail } from "react-icons/md";
-import newbg from "../../public/assets/newbg.jpeg";
 import about from "../../public/assets/about_intro.jpeg";
 import {
   FaBullseye,
@@ -12,7 +11,6 @@ import { IoPeopleSharp, IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTrophy } from "react-icons/fa";
 import cybersec_tem from "../../public/assets/cybersec_team.jpg";
 import { GrIntegration, GrShieldSecurity } from "react-icons/gr";
-// import about from "../../public/assets/about.jpg";
 import img from "/assets/ServiceBg.jpg";
 import cybersec_engineer from "/assets/cybersec_engineer.jpg";
 import { BsBullseye } from "react-icons/bs";
@@ -126,11 +124,9 @@ const AboutUs = () => {
       <div className="flex flex-col bg-white mt-3">
         <div>
           <div className="relative">
-            {/* <div className="bg-black max-sm:h-[200px] h-[300px] opacity-15"></div> */}
-            {/* <img src={img} className="max-sm:h-[200px] h-[300px] w-full" /> */}
-            <div className=" bg-[#004AAD] opacity-85 h-[310px]"></div>
+            <div className=" bg-[#004AAD] opacity-100 h-[250px]"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-4xl md:text-[60px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+              <div className="text-[4xl] md:text-[45px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
                 About Us
               </div>
             </div>
@@ -153,9 +149,6 @@ const AboutUs = () => {
               them towards their zenith.
             </p>
           </div>
-          {/* <h1 className="text-black font-semibold text-3xl md:text-3xl ml-4 md:ml-[65px] mt-[55px] mb-3 max-sm:ml-[90px]">
-            Why Choose Us
-          </h1> */}
           <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-[47px] lg:mt-10 ">
             <div className="w-full lg:w-1/2 px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[400px] ml-10 md:ml-0 max-sm:gap-y-2 max-sm:ml-5">
@@ -302,7 +295,6 @@ const AboutUs = () => {
               className="h-[500px] w-[90%] md:w-[400px] ml-4 lg:ml-[150px] rounded-lg mt-4 md:mt-8"
             />
           </div>
-
           <div className="text-black mx-4 md:ml-[65px] text-2xl md:text-3xl font-semibold mt-[65px]">
             Discover exceptional experiences through testimonials from our
             satisfied customers
@@ -418,5 +410,4 @@ const AboutUs = () => {
     </div>
   );
 };
-
 export default AboutUs;

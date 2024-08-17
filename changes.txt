@@ -1,5 +1,0 @@
-1) customer logo gap increase ✅
-2) about us section intro image ✅
-3) hori verti gaps between cards in service ( same ) ✅
-4) asses secure size increase in mobile , mt increase ✅
-

@@ -12,7 +12,9 @@ const Terms = () => {
             Responsibilities Of The Client And General Work Terms:
           </h1>
           <ol className="list-disc text-black font-normal text-base md:text-lg lg:text-xl ml-5 md:ml-10 lg:ml-12 mt-5">
-            <li>Before commencing any work, such information must be furnished.</li>
+            <li>
+              Before commencing any work, such information must be furnished.
+            </li>
             <li>
               Data entry, web hosting, and custom artwork/graphics-related tasks
               are excluded from the Contract unless explicitly specified, paid{" "}
@@ -33,13 +35,13 @@ const Terms = () => {
           </h1>
           <ol className="list-disc text-black font-normal text-base md:text-lg lg:text-xl ml-5 md:ml-10 lg:ml-12 mt-5">
             <li>
-              Before allowing us to proceed with fulfilling the contract,
-              the client is solely responsible for ensuring proper backups of
-              all content on their site.
+              Before allowing us to proceed with fulfilling the contract, the
+              client is solely responsible for ensuring proper backups of all
+              content on their site.
             </li>
             <li>
-              ArmourIQ shall not be held responsible for any loss or
-              damage to existing data under any circumstances.
+              ArmourIQ shall not be held responsible for any loss or damage to
+              existing data under any circumstances.
             </li>
           </ol>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] mt-[50px] text-black">
@@ -49,13 +51,28 @@ const Terms = () => {
             dependencies on third-party support.
           </p>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] mt-[20px] text-black">
-            ArmourIQ has the right to publish and utilize the data, files, and graphics provided by the Client, while the Client retains the copyright to such materials. If any third party has copyrighted information or files, the Client must obtain permission and rights to use them. It is responsible for obtaining permission and rights for use from the Client and indemnifying ArmourIQ from any claims arising from the Client's negligence in obtaining appropriate copyright permissions. The Client guarantees that all permissions and authorities have been obtained by signing a contract for website design and/or placement and may be required to provide proof of permissions and authorities.
+            ArmourIQ has the right to publish and utilize the data, files, and
+            graphics provided by the Client, while the Client retains the
+            copyright to such materials. If any third party has copyrighted
+            information or files, the Client must obtain permission and rights
+            to use them. It is responsible for obtaining permission and rights
+            for use from the Client and indemnifying ArmourIQ from any claims
+            arising from the Client's negligence in obtaining appropriate
+            copyright permissions. The Client guarantees that all permissions
+            and authorities have been obtained by signing a contract for website
+            design and/or placement and may be required to provide proof of
+            permissions and authorities.
           </p>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] mt-[20px] text-black">
-            During the design phase and upon completion of the website, ArmourIQ will provide the Client with an opportunity to review its appearance and content. If the client does not respond within seven days, the material will be deemed automatically accepted.
+            During the design phase and upon completion of the website, ArmourIQ
+            will provide the Client with an opportunity to review its appearance
+            and content. If the client does not respond within seven days, the
+            material will be deemed automatically accepted.
           </p>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] mt-[20px] text-black">
-            Upon installation/deployment, ArmourIQ is not liable for any alterations made to the Client's pages or website by the Client or a third party, including additions, modifications, or deletions.
+            Upon installation/deployment, ArmourIQ is not liable for any
+            alterations made to the Client's pages or website by the Client or a
+            third party, including additions, modifications, or deletions.
           </p>
         </div>
       </div>
@@ -63,5 +80,4 @@ const Terms = () => {
     </div>
   );
 };
-
 export default Terms;

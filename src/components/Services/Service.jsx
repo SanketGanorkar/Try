@@ -57,12 +57,11 @@ function Service(props) {
     },
   ];
   return (
-    <div className="overflow-x-hidden ">
-      {/* <div className=" bg-[#004AAD] opacity-85 h-[310px]"> */}
+    <div className="overflow-x-hidden">
       <div className="relative ">
-      <div className="bg-[rgba(0,74,173,0.85)] h-[310px]"></div>
+      <div className="bg-[rgba(0,74,173,1.00)] h-[260px]"></div>
       <div className="absolute inset-0 flex items-center justify-center">
-      <div className="text-4xl md:text-[50px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+      <div className="text-4xl md:text-[45px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
         {services[param].topic}
       </div>
     </div>

@@ -1,3 +1,3 @@
-text-[#668cbf]
-main color - #004AAD
-greyish-white - #F6F5F5
+Text-[#668cbf]
+Logo color - #004AAD
+Greyish-white - #F6F5F5
