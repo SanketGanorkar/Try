@@ -46,15 +46,15 @@ const Intro = () => {
             ASSESS → SECURE → DEFEND
           </h2>
           <p className="text-white mt-8">
-            Tailored services designed to meet the specific
+            Tailored services designed to meet the specific{" "}
             <span className="hidden sm:inline"></span>
-            needs of diverse clients, from small startups to large
+            needs of diverse clients, from small startups to large{" "}
             <span className="hidden sm:inline"></span>
-            enterprises. By leveraging cutting-edge technology
+            enterprises. By leveraging cutting-edge technology{" "}
             <span className="hidden sm:inline"></span>
-            and innovative strategies, we empower you to defend
+            and innovative strategies, we empower you to defend{" "}
             <span className="hidden sm:inline"></span>
-            against threats with the same level of security as the
+            against threats with the same level of security as the{" "}
             <span className="hidden sm:inline"></span>
             biggest players in the industry.
           </p>
@@ -87,11 +87,11 @@ const Intro = () => {
                 Cyber Security Project
               </h2>
               <p className="text-white">
-                Our track record reflects our commitment to delivering
+                Our track record reflects our commitment to delivering{" "}
                 <span className="hidden sm:inline"></span>
-                effective cybersecurity solutions tailored to the unique
+                effective cybersecurity solutions tailored to the unique{" "}
                 <span className="hidden sm:inline"></span>
-                needs of each client, ensuring robust protection and peace
+                needs of each client, ensuring robust protection and peace{" "}
                 <span className="hidden sm:inline"></span>
                 of mind in an increasingly complex digital landscape.
               </p>

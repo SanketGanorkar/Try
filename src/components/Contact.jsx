@@ -67,13 +67,14 @@ const Contact = () => {
           <div className="flex flex-row">
             <CiLocationOn color="#004bae" className="ml-3 mt-4" size={40} />
             <div className="flex flex-col">
-              <h5 className="text-white ml-3 mt-5">
-                Saket Salcon, Rasvilas, Saket District
-                <br />
-                Centre, Sector 6, Pushp Vihar,
-                <br />
-                New Delhi, India - 110017
-              </h5>
+              <div className="flex flex-col">
+                <h5 className="text-white ml-3 mt-2 text-pretty">
+                  Saket Salcon, Rasvilas, Saket District
+                  <br />
+                  Centre, Sector 6, Pushp Vihar,
+                  New Delhi, India - 110017
+                </h5>
+              </div>
             </div>
           </div>
           <div className="flex flex-row">
