@@ -31,7 +31,7 @@ const Testimonials = () => {
           <div>
             <h5 className="font-bold text-[#004bae] mt-12">TESTIMONIALS</h5>
             <h2 className="font-bold text-3xl mt-3">
-              What Client Says About Us
+              What clients say about us
             </h2>
           </div>
           <div>

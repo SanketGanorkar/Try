@@ -42,7 +42,7 @@ const Intro = () => {
           <h2 className="text-white font-bold text-nowrap max-sm:text-[11px] md:mb-3 max-sm:mb-3">
             DEMOCRATIZING CYBERSECURITY
           </h2>
-          <h2 className="text-white font-bold text-3xl max-sm:text-[15px]">
+          <h2 className="text-white font-bold text-3xl max-sm:text-[25px]">
             ASSESS → SECURE → DEFEND
           </h2>
           <p className="text-white mt-8">

@@ -59,9 +59,9 @@ function Service(props) {
   return (
     <div className="overflow-x-hidden">
       <div className="relative ">
-      <div className="bg-[rgba(0,74,173,1.00)] h-[260px]"></div>
+      <div className="bg-[rgba(0,74,173,1.00)] h-[260px] "></div>
       <div className="absolute inset-0 flex items-center justify-center">
-      <div className="text-4xl md:text-[45px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-5xl">
+      <div className="text-4xl md:text-[45px] text-white font-semibold mt-[80px] max-sm:mt-[70px] max-sm:text-3xl">
         {services[param].topic}
       </div>
     </div>
@@ -84,7 +84,7 @@ function Service(props) {
               <p className="intro-content">{services[param].content}</p>
             </div>
           </div>
-          <div className="bg-[#F6F5F5] h-auto w-[400px] rounded-[15px] border-black border-[1px] max-sm:ml-2 mr-[140px]">
+          <div className="bg-[#F6F5F5] h-auto w-[400px] rounded-[15px] border-black border-[1px] max-sm:ml-5 mr-[140px] max-sm:w-[370px]">
             <div className="flex flex-col mt-3 ">
               <h2 className="text-black font-semibold ml-6 text-2xl">
                 Our Services
@@ -165,7 +165,7 @@ function Service(props) {
               <p className="extra-con-para">{services[param].getInTouch}</p>
             </div>
           </div>
-          <div className="flex flex-row mt-10 lg:px-1 ml-7 max-sm:ml-1">
+          <div className="flex flex-row mt-10 lg:px-1 ml-7 max-sm:ml-1 max-sm:flex-col">
             <div>
               <button className="bg-black text-white w-[105px] text-center rounded-sm p-1">
                 Get Started
