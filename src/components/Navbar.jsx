@@ -102,14 +102,6 @@ const Navbar = () => {
                 setVisibleMenu(false);
               }}
             >
-              <a href="#team">TEAM</a>
-            </li>
-            <li
-              onClick={() => {
-                navigate("/");
-                setVisibleMenu(false);
-              }}
-            >
               <a href="#blog">BLOG</a>
             </li>
             <li

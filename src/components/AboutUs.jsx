@@ -135,11 +135,11 @@ const AboutUs = () => {
             src={about}
             className="ml-4 md:ml-[90px] mt-11 w-[85%] rounded-2xl"
           />
-          <h1 className="text-black font-semibold text-3xl ml-4 md:ml-[65px] mt-[70px] max-sm:ml-[120px]">
+          <h1 className="text-black font-semibold text-3xl ml-4 md:ml-[65px] md:mt-[70px] max-sm:ml-[120px] max-sm:mt-[30px]">
             About Us
           </h1>
           <div>
-            <p className="mx-4 md:ml-[65px] text-black font-normal text-sm md:text-xl mt-3 md:w-[90%] max-sm:ml-9">
+            <p className="mx-4 md:ml-[65px] text-black font-normal text-sm md:text-xl mt-3 md:w-[90%] max-sm:ml-7">
               At the heart of innovation, where technology meets craftsmanship,
               our company stands as a beacon of transformation and excellence.
               We are not merely cybersecurity experts we are pioneers committed
@@ -151,11 +151,11 @@ const AboutUs = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-6 md:ml-[47px] lg:mt-10 ">
             <div className="w-full lg:w-1/2 px-4 md:px-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[400px] ml-10 md:ml-0 max-sm:gap-y-2 max-sm:ml-5">
+              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[400px] ml-10 md:ml-0 max-sm:gap-y-4 max-sm:ml-5">
                 {visionMissionValues.map((item) => (
                   <div
                     key={item.id}
-                    className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[310px] h-[310px] hover:w-[320px] hover:h-[320px] transition-all duration-300 md:mt-3"
+                    className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[310px] h-[310px] hover:w-[320px] hover:h-[320px] transition-all duration-300 md:mt-3 max-sm:ml-3"
                   >
                     <div className="flex items-center mb-2">
                       <div className="mr-2">{item.logo}</div>
@@ -305,7 +305,7 @@ const AboutUs = () => {
             {sections.map((section) => (
               <div
                 key={section.id}
-                className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[360px] h-[290px] hover:w-[370px] hover:h-[300px] transition-all duration-300"
+                className="bg-[#F6F5F5] text-black p-6 rounded-lg flex flex-col items-center border-[#004AAD] border-[1px] hover:bg-[#004AAD] hover:text-white hover:border-white hover:border-[1px] w-[360px] h-[290px] hover:w-[370px] hover:h-[300px] transition-all duration-300 max-sm:h-[250px]"
               >
                 <div className="flex flex-row">
                   <div className="mr-2">{section.logo}</div>
@@ -322,7 +322,7 @@ const AboutUs = () => {
         </div>
         <Team />
         <div className="flex flex-col md:flex-row justify-center mt-[70px] max-sm:mt-[70px] ">
-          <div className="flex flex-col max-sm:ml-[67px] ">
+          <div className="flex flex-col max-sm:ml-[55px] ">
             <h1 className="text-black font-semibold md:ml-12 text-[18px] whitespace-nowrap">
               Secure Your Business with Armour IQ
             </h1>
@@ -335,7 +335,7 @@ const AboutUs = () => {
           </div>
           <div className="max-md:mt-10 mx-4 md:ml-[90px] max-sm:mt-2">
             <div className="flex flex-col items-center md:items-start mb-4">
-              <h3 className="text-black font-bold max-sm:mt-3">
+              <h3 className="text-black font-bold max-sm:mt-3 max-sm:mr-10">
                 Contact Us to
               </h3>
               <ul className="list-disc list-inside mt-2">
